@@ -7,7 +7,7 @@
 * En la etiqueta head:
     * Cambiar el titulo de la ventana por "Selectores Css"
     * Declarar una etiqueta style
-* En la etiqueta html:
+* En la etiqueta body:
     * Crear 1 título h1 con la clase rojo y texto autogenerado
     * Crear 2 título h2 con texto autogenerado
     * Crear 3 título h3 con texto autogenerado
@@ -27,7 +27,6 @@
   * Crear 3 párrafos autogenerados
   * Agregar el atributo ID al div con el valor de principal
 * En la etiqueta style:
-  * Crear el selector universal y establecer el color de texto en verde
   * Crear el selector de clase rojo y establecer el color de texto en rojo
   * Crear el selector de clase azul y establecer el color de texto en azul
   * Crear el selector de ID principal y establecer el color de texto en gris

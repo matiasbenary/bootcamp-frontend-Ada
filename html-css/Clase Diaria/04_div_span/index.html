@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Span</title>
+    <!-- Class es para agrupar elementos y darle el mismo estilo-->
+    <style type="text/css">
+    /* 
+    class  es con . 
+    id es #
+    */
+        .red{
+            color:red
+        }
+        #titulo1{
+            font-size: 35px;
+        }
+        .grandecito{
+            font-size: 20px;
+        }
+        .resaltar{
+            color:blue;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- id y class son atributos que todo elemnto puede tener -->
+    <!-- Div agrupa elementos y este ocupa todo el ancho del contenedor padre -->
+    <div>
+        <div>
+            <h2>perritos en peligro</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQmhQqOTpQVw4nD4WLzlgg5K9V9nZ7JnxGiQz6MYODl8fWRvjDj" alt="perro">
+        </div>
+        <h1 id="titulo1">CoranaVirus</h1>
+        <!-- Span es simil Div pero ocupa solo el espacio que le corresponde -->
+        <p>Se <span class="resaltar">test</span> esta <span class="resaltar">trantando</span></p>
+    </div>
+</body>
+</html>

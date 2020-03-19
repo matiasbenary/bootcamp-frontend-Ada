@@ -6,7 +6,7 @@
 * En la etiqueta head:
     * Cambiar el titulo de la ventana por "Prueba de Colores"
     * Declarar una etiqueta style
-* En la etiqueta html:
+* En la etiqueta body:
     * Crear 6 títulos con nombres de canciones del h1 al h6
     * Crear 2 parrafos
     * Agregar 2 imagenes de Google imagenes

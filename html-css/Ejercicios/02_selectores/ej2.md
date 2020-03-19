@@ -17,9 +17,10 @@
 ## Parte 2    
 
 * A tres de los párrafos anteriores:
-  * Agregar el atributo class
+  * Agregar un span que contenga las primeras 2 palabras del parrafo
+  * A este span agregarle el atributo class
   * Establecer el valor de class en azul
-* A uno de los párrafos anteriores:
+* A uno de los otros párrafos:
   * Agregar el atributo class
   * Establecer el valor de class en rojo
 * Crear un div con:

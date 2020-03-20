@@ -15,15 +15,16 @@
 ## Parte 2
 
 * Darle clases a la elementos anteriores
-* Definir que la familia de letras del body es Arial
+* Definir que la familia de letras del body sea una de google font
 * El h1 va a poseer las siguiente caracteristicas:
-    * El tipo de letra sea Time New Roman
+    * El tipo de letra sea Arial
     * El tamaño 28px
     * Tenga un estilo cursiva
     * Este en negrita
+    * Quiero que tenga una sombra es un rojo
 * El p va a poseer las siguiente caracteristicas:
     * Tiene que estar en mayusculas la primera letra de cada palabra
     * Tiene que estar justificado
-* Los item tienen que tachados
+* Los item tienen que tachados menos el ultimo
 
 

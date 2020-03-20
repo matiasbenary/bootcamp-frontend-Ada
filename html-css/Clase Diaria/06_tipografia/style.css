@@ -1,0 +1,69 @@
+/*
+    font-family: nombre de familia,separado por comas las alternativas de tipo letra
+    Reglas: Si tiene espacio va entre  comillas
+            Se puede poner nombre de estilo de letra
+            primera es la que quiere usar,y resto son alternativas en caso de que la primera falle
+
+    font-weight: peso de la letra
+    https://developer.mozilla.org/es/docs/Web/CSS/font-weight
+    admite los valores normal,bold
+    o valeres numericos,estos depende de la letra
+    
+    font-style: cambia el estilo de letra a cursiva u oblicua
+    son tres  opciones normal,italic,oblique
+
+    text-transform: cambia de mayuscula a minuscula o viseversa
+    opciones son:
+        *uppercase:  pasa todo a mayuscula
+        *lowercase: pasa todo a minuscula
+        *capitalize: primera letra en mayuscula resto en minuscula
+
+    text-align: alinia el texto de forma horizontal
+
+    text-decoration: agrega decoracion al texto,como un subrayado
+https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration
+    *none: saca todo tipo de decorado (es útil para hacer que los hipervinculos no tengan una raya debajo del texto)
+    *underline: nos muestra el texto subrayado
+    *overline: agrega una línea sobre el texto
+    *line-through: el texto aparece tachado con una línea en el medio (es útil a la hora de tachar elementos de una lista)
+
+    text-indent: identa el texto
+
+    line-height: alto de  linea,es la diferencia entre renglones
+    */
+/* 
+    Unidades
+    px: 
+        * Es un valor fijo
+        * No escala bien
+    porcentaje:
+        * Es relativo
+        * Escala bien  
+*/
+.title{
+    font-family: "Baloo 2",Arial, sans-serif;
+    font-weight: 800;
+    font-style: oblique;
+    text-decoration: underline;
+    /*
+        eje x: izquierda(negativo) a derecha(positivo)
+        eje y: arriba(negativo) a abajo(postivo)
+        radio del Blur:esto difumina
+        color
+    */
+    text-shadow: -10px -10px 3px #80000080;
+}
+
+.text{
+    letter-spacing: 10px; 
+    word-spacing: 20px;
+    line-height: 50px;
+    text-indent: 20px;
+    font-family: Roboto, sans-serif;
+    color: white;
+    background-color: hsla(224,100%,50%,50%);
+    font-size: 24px;
+    text-transform:uppercase;
+    text-align: justify;
+    vertical-align:top;
+}

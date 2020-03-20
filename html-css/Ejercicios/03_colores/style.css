@@ -1,3 +1,6 @@
+*{
+    color: white;
+}
 .morado{
     color:purple;
 }
@@ -12,4 +15,17 @@
 
 .naranja{
     color:hsl(20,100%,58%)
+}
+
+.rojo{
+    background-color:rgba(255, 0, 0,25%);
+    /* color:rgba(255, 0, 0,0.25); */
+}
+
+.celeste{
+    background-color: #328dd880;
+}
+
+.verde{
+    background-color: hsla(120,100%,50%,25%);
 }

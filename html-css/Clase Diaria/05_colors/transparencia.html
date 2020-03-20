@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors</title>
+    <style>
+        /* RGBA
+         cada parametro representa un porcentaje de colores primario
+         y ultimo representa alpha, va 0.0 a 1.0,donde 0 es totalmente transparente
+         y 1 es totalmente opaco
+         o en porcentaje */
+        .azul{
+            background-color: rgba(0, 0, 255, 0.25);
+            color:bisque;
+        }
+        /* HEX cada dos digitos es la representacion de un color
+           Rango 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F
+           Si agregamos dos digitos mas agregamos el alpha,va de 00 a FF
+        */
+        .rojo{
+            background-color: #ff000080;
+            color:bisque;
+        }
+        /* 
+            primero: Matriz,es decir el color en si
+            segundo: saturacion,en 0% es gris en 100% es muy vivo
+            tercero: intesisdad,en 0% es negro, en 100% es blanco,en lo intermedios puesdo aclarar o oscureser el boton
+        */
+        .verde{
+            background-color:hsla(120,100%,50%,75%);
+            color:bisque;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="amarillo">Amarillo</h1>
+    <h1 class="azul">Azul</h1>
+    <h1 class="rojo">Rojo</h1>
+    <h1 class="verde">Verde</h1>
+</body>
+</html>

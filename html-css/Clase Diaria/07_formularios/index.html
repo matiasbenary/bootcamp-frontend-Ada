@@ -20,7 +20,7 @@
 
     -->
 
-    <form action="/" method="GET" enctype="application/x-www-form-urlencoded" >
+    <form action="" method="GET" enctype="application/x-www-form-urlencoded" >
         <!-- 
             input es donde el usuario ingresa los datos
             type especifica el tipo de input
@@ -37,20 +37,30 @@
                 tel:"62465465",
             }
         -->
-        </div>
         
-        <input type="text" name="user" size="20" maxlength="5" value="admin@admin.com" placeholder="Ingrese su usuario">
-        <div>
+        <!-- required no se envia el form si el campo esta vacio
+        pattern funciona con expresiones regulares,se para validar un formato deseado,ej ^[a-zA-Z]+$ es para solo letras
+        -->
+        <label>
+            Usuario
+            <input type="text" name="user" size="20" maxlength="50" placeholder="Ingrese su usuario"
+            required
+            pattern="^[a-zA-Z]+$">
+        </label>
 
-        <input type="email" name="user" value="admin@admin.com" placeholder="Ingrese su usuario">
+        <label for="email">Email</label>
+        <input type="email" name="user" value="admin@admin.com" placeholder="Ingrese su usuario"
+        id="email">
         <br>
         <input type="password" name="password" placeholder="Ingrese su pass" >
         <br>
         <input type="number" name="test" value="esto es un input">
 
+        <!-- Radio te permite seleccionar solo un opcion ej on/off -->
         <input type="radio" name="terminos" value="1" /> Si
         <input type="radio" name="terminos" value="2" checked="checked" /> No
-
+    
+        <!-- checkbox te permite seleccionar varia opciones -->
         <input type="checkbox" name="superheroe" value="batman" checked="checked" /> Batman
         <input type="checkbox" name="superheroe" value="superman" checked="checked" /> Superman
         <input type="checkbox" name="superheroe" value="flash" checked="checked" /> Flash
@@ -71,7 +81,7 @@
             size cantidad de elementos a mostrar
             en las options selected esta seleccionada por defecto
          -->
-        <select name="paises" >
+        <select name="paises" multiple="multiple" size="2">
             <option value="arg">Argentina</option>
             <option value="bra" selected>Brasil</option>
             <option value="chl">Chile</option>

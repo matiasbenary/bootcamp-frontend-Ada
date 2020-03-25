@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      label {
+        display: block;
+        margin: 10px;
+      }
+      .enlinea {
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Formulario registro</h1>
+    <form action="">
+      <label for="nombre">
+        Nombre:
+        <input type="text" name="nombre" id="nombre" value="Matias" placeholder="Ingresa tu nombre" required/>
+      </label>
+      <label for="apellidos">
+        Apellidos:
+        <input type="text" name="apellidos" id="apellidos" value="Pepito"/>
+      </label>
+      <label for="email">
+        Email:
+        <input type="email" name="email" id="email" />
+      </label>
+      <label for="pass">
+        Clave:
+        <input type="password" name="pass" id="pass" />
+      </label>
+      <label>
+        <textarea name="contanos" id="" cols="30" rows="10"> </textarea>
+      </label>
+      <span>
+        Plan a contratar:
+        <label class="enlinea">
+          <input type="radio" name="plan" /> Gratis</label
+        >
+        <label class="enlinea">
+          <input type="radio" name="plan" /> $1/mes</label
+        >
+        <label class="enlinea">
+          <input type="radio" name="plan" /> $10/anual</label
+        >
+    </span>
+    <label>
+        <input type="checkbox" name="novedades"/>
+
+        Deseo recibir información sobre novedades y ofertas
+    </label>
+    <label>
+        <input type="checkbox" name="condiciones"/>
+
+        Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre protección de datos
+    </label>
+    <input type="submit" value="Enviar">
+    </form>
+  </body>
+</html>

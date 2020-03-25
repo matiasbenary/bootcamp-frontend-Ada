@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+</head>
+<body>
+    <!-- 
+        action= donde se va enviar el formulario 
+        method= verbo http,Estos son GET,POST,PUT,DELETE,OPTION  
+            GET  pedir informacion en texto planos,se usan para filtro y cosas que  no requieran seguridad
+            POST enviar informacion encriptada,informacion importante como passwords,clave bancaria,etc
+        enctype= establece el codificado,este puede ser
+            application/x-www-form-urlencoded por defecto
+            multipart/form-data para enviar archivos
+            text/plain:texto plano
+
+    -->
+
+    <form action="/" method="GET" enctype="application/x-www-form-urlencoded" >
+        <!-- 
+            input es donde el usuario ingresa los datos
+            type especifica el tipo de input
+            name nombre del campo
+            value valor ingresado por el usuario,si lo colocas es el de defectos
+            placeholder mensaje que muestra cuando el campo esta vacio
+            size largo del input
+            maxlength max cantidad de caracteres
+            ej de form enviado:
+            {
+                user:"pepito@gmail.com",
+                pass:"123456",
+                cp:"1234",
+                tel:"62465465",
+            }
+        -->
+        </div>
+        
+        <input type="text" name="user" size="20" maxlength="5" value="admin@admin.com" placeholder="Ingrese su usuario">
+        <div>
+
+        <input type="email" name="user" value="admin@admin.com" placeholder="Ingrese su usuario">
+        <br>
+        <input type="password" name="password" placeholder="Ingrese su pass" >
+        <br>
+        <input type="number" name="test" value="esto es un input">
+
+        <input type="radio" name="terminos" value="1" /> Si
+        <input type="radio" name="terminos" value="2" checked="checked" /> No
+
+        <input type="checkbox" name="superheroe" value="batman" checked="checked" /> Batman
+        <input type="checkbox" name="superheroe" value="superman" checked="checked" /> Superman
+        <input type="checkbox" name="superheroe" value="flash" checked="checked" /> Flash
+        <input type="checkbox" name="superheroe" value="mujer maravilla" checked="checked" /> Mujer Maravilla
+        
+        <input type="hidden" name="id" value="Estoy oculto en la sombra">
+        <!-- 
+            textarea se usa para texto largos
+            entre etiquetas podemos escribir un texto default
+         -->
+        <textarea name="estado" cols="10" rows="2" placeholder="escribi tu estado">
+            Como te sientes hoy?
+        </textarea>
+
+        <!-- 
+            parecido a lista
+            multiple="multiple" me permite selecionar mas de una opcion
+            size cantidad de elementos a mostrar
+            en las options selected esta seleccionada por defecto
+         -->
+        <select name="paises" >
+            <option value="arg">Argentina</option>
+            <option value="bra" selected>Brasil</option>
+            <option value="chl">Chile</option>
+            <option value="col">Colombia</option>
+            <option value="ven">Venezuela</option>
+        </select>
+<!-- file:///?user=admin%40admin.com&user=admin%40admin.com&password=qwe&test=3&terminos=1&superheroe=batman&superheroe=superman&superheroe=flash&superheroe=mujer+maravilla&id=Estoy+oculto+en+la+sombra&estado=++++++++++++Como+te+sientes+hoy%3F%0D%0A++++++++&paises=col -->
+<!-- /?user=admin%40admin.com&user=admin%40admin.com&password=&test=&terminos=2&superheroe=batman&superheroe=superman&superheroe=flash&superheroe=mujer+maravilla&id=Estoy+oculto+en+la+sombra&estado=++++++++++++Como+te+sientes+hoy%3F%0D%0A++++++++&paises=bra -->
+
+<!-- 
+    submit es para enviar el form
+ -->
+        <input type="submit" value="Guardar" />
+    </form>
+</body>
+</html>

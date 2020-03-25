@@ -1,0 +1,39 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    color:#C30
+}
+.titulo{
+    font-size: 24px;
+}
+.texto-principal{
+    color:#369;
+    font-size: 16px;
+}
+
+.texto-principal-resaltado{
+    color:#0000BB;
+    background-color: #FFFFCC;
+    font-style: italic;
+}
+
+h2{
+    color:#000;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+div{
+    color:#555;
+}
+
+.nombre-autor{
+    color: yellow;
+    background-color: black;
+    font-style: italic;
+}
+
+.gris{
+    background-color: gray;
+}

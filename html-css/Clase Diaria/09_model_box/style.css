@@ -1,0 +1,97 @@
+/* 
+    Puedo definir la altura y el ancho,con heigth y width
+    se puede usar un minimo  y maximo que ocupe el elemento,  min  y  max
+     
+*/
+
+.display{
+    min-height: 30px;
+    width: 150px;
+    background-color: antiquewhite;
+    border: 2px solid #000;
+}
+.fondo-verde{
+    background-color:  green;
+    color:white
+}
+/* 
+    display como se van a disponer los elementos
+    inline: no se respetan tema de anchura y altura,es lo ocupa en el contenedor
+    block: te permite modificar anchura y altura,pero un salto de linea
+    inline-block: te permite modificar anchura y altura, pero se pueden colocar elemntos a lado
+*/
+.inline{
+    display: inline;
+}
+
+.block{
+    display: block;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+.box{
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    background-color: antiquewhite;
+    border: 2px solid #000;
+}
+/* 
+    overflow propieda que me marca el  coportamiento del contenido cuando este es mas grande que el contenedor padre
+    visible:muestra todo
+    hidden:oculata lo que sobresale
+    scroll:agrega una para poder ver lo oculto
+    auto:depende del navegador
+
+*/
+.visible{
+    overflow: visible;
+}
+.hidden{
+    overflow: hidden;
+}
+.scroll{
+    overflow: scroll;
+}
+.auto{
+    overflow: auto;
+}
+/* 
+    Border
+    border: 1px solid red;
+    tamanio,estilo,color
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: red;
+
+    estilos son:
+    solid
+    dotted
+    dashed
+    double
+    groove
+    ridge
+    inset
+    outset
+
+    border-width:forma manual
+    border-width: 1px 2px 5px 10px;
+    arriba derecha abajo izquierdac con 4 propiedades
+    border-width: 1px 20px;
+    arriba-abajo  derecha-izquierda con 2 propiedades
+
+*/
+
+.solid{
+    border: 1px solid blue;
+    border-width: 1px 2px 5px 10px;
+    border-radius: 5px;
+}
+
+.dotted{
+    border: 2px dotted green;
+}

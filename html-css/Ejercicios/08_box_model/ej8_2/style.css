@@ -1,0 +1,13 @@
+div{
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    overflow:hidden;
+}
+
+p{
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    overflow: scroll;
+}

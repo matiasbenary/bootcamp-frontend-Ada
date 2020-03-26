@@ -1,0 +1,29 @@
+hr{
+    border: 2px solid rgb(235,0,0);
+}
+
+div{
+    border-width: 3px;
+    border-style: dashed;
+    border-color: #ccc;
+}
+
+section{
+    /* border-width: 0 0 1px 0;
+    border-style: groove;
+    border-color: #0000FF;
+
+    border-bottom-width: 1px;
+    border-bottom-style: groove;
+    border-bottom-color: #0000FF; */
+
+    border-bottom: 1px groove#0000FF ;
+}
+
+h2{
+    border-top:1px orange solid;
+    border-bottom:2px red groove;
+    border-left:3px green  dashed;
+    border-right:4px blue  dotted;
+
+}

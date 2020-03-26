@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <style>
+        /* https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_intro */
+        table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        }
+
+        td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+        }
+
+        tr:nth-child(even) {
+        background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+    <span>Hola</span>
+    <h2>Lista de episodios</h2>
+    <h3>Temporada 1: 2013-14</h3>
+     <!-- 
+         Emmet
+        table>thead>th*6 
+        tbody>tr*5>td*6
+    -->
+    <table>
+        <thead>
+            <th>No. (serie)</th>
+            <th>No. (temp.)</th>
+            <th>Título</th>
+            <th>Director</th>
+            <th>Escritor(es)</th>
+            <th>Audiencia (en millones)</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <td>1</td>
+                <td>Pilot Buscando las semillas (LA)</td>
+                <td>Justin Roiland</td>
+                <td>Dan Harmon y Justin Roiland</td>
+                <td>1.10</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>2</td>
+                <td>Lawnmower Dog Invasión canina (LA)</td>
+                <td>John Rice</td>
+                <td>Ryan Ridley</td>
+                <td>1.51</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+   
+</body>
+</html>

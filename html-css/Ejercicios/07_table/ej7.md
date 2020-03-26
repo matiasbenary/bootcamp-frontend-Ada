@@ -1,8 +1,6 @@
 Crear un documento que tenga:
-* Nombre: index18.html
+* Nombre: index.html
 * Title:
-Tablas, Tablas y más Tablas
-* Título:
 Tablas, Tablas y más Tablas
 * Crear un elemento de tipo linea
 * Crear un título del tipo h2: 'Lista de episodios'

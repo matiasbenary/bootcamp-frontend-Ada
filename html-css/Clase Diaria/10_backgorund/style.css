@@ -5,10 +5,28 @@
     color:wheat
 }
 
-
+/* 
+    background-image: colocar imagen de fondo
+        url  colocar path(ruta) imagen,o link de imagen
+    background-repeat:  repeat
+                        repeat-x
+                        repeat-y
+                        no-repeat
+    background-position:  mover la imagen;
+                            eje x    eje  y
+                        eje x  left,center,right, px o %
+                        eje y  top,center,bottom, px o %
+    background-attachment: es para fijar(fixed) o escrolear(scroll) la imagen del fondo.
+    
+    Para hacer background en una sola linea puedo hace lo siguiente:
+    background: url("foto1.jpeg") no-repeat fixed center center;
+*/
 body{
-    background-image: url("foto1.jpeg");
-    /* background-repeat: repeat-x;
+    /* background: url("foto1.jpeg") no-repeat fixed center center; */
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    /* background-size: cover; */
+    /* background-image: url("foto1.jpeg"); */
+    /* c: repeat-x;
     background-position: center bottom;
     background-attachment: scroll; */
 }

@@ -112,18 +112,19 @@
 }
 
 .hoja{
-    width: 75%;
+    width: 50%;
     height: 150px;
     background-color: blue;
     border: 1px solid black;
     overflow: hidden;
     margin: auto;
     padding: 15px;
+    box-sizing:border-box
     /* 
         eje x,derecha izquierda
         eje y,arriba abajo
         radio blur: difuminado de sombra
         Radio de propagación: es el tam 
     */
-    box-shadow: 61px -6px 13px 13px rgba(148,77,148,1);
+    /* box-shadow: 61px -6px 13px 13px rgba(148,77,148,1); */
 }

@@ -6,7 +6,7 @@ body{
 .card{
     margin: 0 auto;
     width: 300px;
-    height: 400px;
+    min-height: 400px;
     background: #FFF;
     border-radius: 3px;
     text-align: center;
@@ -24,10 +24,10 @@ body{
 }
 
 .card-link{
-    display:inline-block;
     text-decoration: none;
     background-color: #42cc8c;
     border: 2px solid #000000;
     padding: 8px 16px;
     color: #000000;
+    margin-bottom: 10px;
 }

@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color:wheat
+}
+
+
+body{
+    background-image: url("foto1.jpeg");
+    /* background-repeat: repeat-x;
+    background-position: center bottom;
+    background-attachment: scroll; */
+}

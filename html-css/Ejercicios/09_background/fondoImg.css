@@ -1,0 +1,6 @@
+body{
+    background-image: url("foto1.jpeg");
+    background-repeat: repeat-y;
+    background-position: 15px  20px;
+    background-attachment: fixed;
+}

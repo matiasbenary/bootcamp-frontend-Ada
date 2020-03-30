@@ -1,0 +1,24 @@
+.btn1{
+    cursor: auto;
+}
+.btn2{
+    cursor: crosshair;
+}
+.btn3{
+    cursor: default;
+}
+.btn4{
+    cursor: pointer;
+}
+.btn5{
+    cursor: move;
+}
+.btn6{
+    cursor: text;
+}
+.btn7{
+    cursor: wait;
+}
+.btn8{
+    cursor: help;
+}

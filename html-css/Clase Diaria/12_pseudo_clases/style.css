@@ -1,0 +1,44 @@
+/* 
+    visited:es  para  url ya visitadas 
+    active: cuando le  hago click al  elemento
+    hover: cuando paso cursor por encima
+*/
+
+a:visited{
+    color:aqua;
+}
+.btn:active{
+    color:red;
+    padding: 12px;
+    border: 2px solid aqua;
+}
+
+.btn:hover{
+    color:navy;
+}
+
+.btn1:hover{
+    background-color: brown;
+    color:#FFF;
+}
+
+/*
+    child:hace referencia a uno varios elementos hermanos
+    first: solo el primero
+    last:solo el ultimo\
+    nth:odd para impares
+        even los pares
+        numero (3) solo ese elemento
+        numero con n (3n) se aplica cada n saltos 
+*/
+li:first-child{
+    background-color: bisque;
+}
+
+li:last-child{
+    background-color: blueviolet;
+}
+
+li:nth-child(3n) {
+    background-color: gray;
+}

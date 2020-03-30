@@ -1,0 +1,22 @@
+/* Es para colocar contenido despues del elemento */
+p::after{
+    content: "?";
+}
+/* Idem pero antes del elemento */
+p::before{
+    content: "Pepito ";
+}
+
+/* Solo afecta a la Primera letra */
+p::first-letter{
+    font-size: 25px;
+    color:red
+}
+/* Solo afecta a la primera linea */
+p::first-line{
+    background-color: aquamarine;
+}
+/* Solo afecta cuando lo resaltas */
+p::selection{
+    background-color: bisque;
+}

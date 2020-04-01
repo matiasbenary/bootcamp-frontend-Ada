@@ -34,16 +34,30 @@ body{
     background-color: #bc3b69;
   }
 /* 
+  order: me dice como se van a ordenar  los items,se orderna de menor a mayor y por defecto todos tienen 0
+
+  flex-basis: Especifica el tamaño del item antes de distriuirlo, en  0 es lo ocupa el contenido,en auto lo hace en fucion del resto.
+
+  flex-grow: Por defecto esta en 0, indica del espacio sobrante cuando puede crecer.
+  
+  flex-shrink: Indica cuando puede reducirse un elemento con respecto a  otros.Por defecto tiene el valor en 1
 
 */
 #test{
+  flex-basis: 400px;
   order: 3;
+  flex-grow:1
 }
 
 .item5{
-  order: 2;
+  flex-basis: 0;
+  order: 0;
+ 
 }
 
 .item3{
-  order: 1;
+  flex-basis: auto;
+  order: 0;
+  /* flex-grow:3 */
+  flex-shrink: 2;
 }

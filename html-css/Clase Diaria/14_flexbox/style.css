@@ -1,0 +1,49 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+  /* 
+    Flex me permite decir como se va a distribuir los elementos
+    Esto aplica solo de nodo padre al hijo ej  <div>  <img>  <img> <div> ,donde el div es el padre  y img son  los hijos
+    flex-direction:esto me da el sentido de  distribucion,puede  ser  en  columna(column) o en fila(row),y en reversa ej  row-reverse
+    flex-wrap: me  permite distribuirlo en mutiples lineas,wrap, nowrap,wrap-reverse
+    justify-content:Modifica la distribucion en el eje principal(row->x , column->y)
+    align-items:Modifica la distribucion en el eje secundario(row->y , column->x)
+    align-content: SOLO FUNCIONA CUANDO USAMOS LA PROP flex-wrap.Modifica la distribucion de la multiples lineas
+  */
+  .container{
+    width: 80%;
+    max-width: 640px;
+    min-height: 500px;  
+    margin: auto;
+    background-color: #d3d3d3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    align-items: stretch;
+    align-content:  stretch;
+  }
+  
+  .item{
+    width: 100px;
+    line-height: 100px;
+    color: white;
+    border-radius: 10px;
+    margin: 5px;
+    background-color: #bc3b69;
+  }
+/* 
+
+*/
+#test{
+  order: 3;
+}
+
+.item5{
+  order: 2;
+}
+
+.item3{
+  order: 1;
+}

@@ -1,0 +1,68 @@
+/* 
+    nombre de la etiqueta: modifica todas las etiquetas
+*/
+p{
+    font-size: 24px;
+}
+
+/* 
+    clase: Se designa una clase al elemento y esta aplica los estilos
+*/
+.container{
+    background-color: aquamarine;
+}
+
+/* 
+    id: Se designa un id al elemento y esta aplica los estilos
+*/
+#amigos{
+    background-color: bisque;
+}
+
+/*
+    universal: Selecciona todos los elementos y aplica los estilos.Se utiliza para resetear los estilos
+*/
+*{
+    margin: 25px;
+}
+/*
+    atributo:  Se utiliza con un selector,se selecciona el atributo que  quiero  modificar
+*/
+
+a[href="#test"]{
+    background-color: gold;
+}
+
+p[id]{
+    border: 10px red solid;
+}
+/* 
+    Combinador descendientes
+    se utiliza con espacios
+    y tiene que esta contenido
+*/
+.pepitos ul li{
+    color: red;
+}
+/* 
+    Combinador de hijo 
+    se utiliza con >
+    y tiene que ser el hijo directo
+*/
+.pepitos > p{
+    background-color: aquamarine;
+}
+/* 
+    Combinador  de  hermanos adyacentes
+    se utiliza con + y tiene  que ser  el segundo elemento sigue directamente del primero  y  comparten  el padre
+*/
+p + a{
+    background-color: gold;
+}
+/* 
+    Combinador  general de hermanos 
+    se utiliza con ~ y toma el segundo elemento sigue al primero (no necesariamente de forma inmediata) y ambos comparten el mismo elemento padre.
+*/
+p ~ ul{
+    background-color: blueviolet;
+}

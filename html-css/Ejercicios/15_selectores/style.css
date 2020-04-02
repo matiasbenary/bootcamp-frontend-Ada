@@ -1,0 +1,20 @@
+p{
+    color:red;
+}
+h1{
+    color:blue;
+}
+div > h1{
+    color:green;
+}
+div > p{
+    color:gray;
+}
+
+div  a {
+    color:violet;
+}
+
+p ~ span{
+    font-style: italic;
+}

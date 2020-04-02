@@ -1,0 +1,68 @@
+/* 
+    static es el default 
+*/
+.container{
+    position: absolute;
+    border: 2px red solid;
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+}
+
+.cubo{
+    display: inline-block;
+    border: 2px beige solid;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+.static{
+    position: static;
+}
+
+/*
+    Relative significa que su movimiento es relativo a la posición normal que tendria si fuera static la posición que ocuparía en static siempre está, pasa que vos lo moves un poco pero es como que el navegador le reserva su espacio (by Chiara)  
+
+    Acepta esta propiedades:
+    en el  eje x :  left y right
+    en el eje y: top,  y bottom
+*/
+.relative{
+    background-color:coral;
+    width: 120px;
+    position: relative;
+    top:5px;
+    left: 5px;
+}
+/* 
+    establece  la posicion que ocupa el elemento en relacion al contenedor padre.
+    Se pierde la relacion con lo otros elemntos
+    por eso si dos elemento se colocan con absolute,se superponen,siempre y cuando no se les digas la coordenadas
+    en el  eje x :  left y right
+    en el eje y: top,  y bottom
+*/
+.absolute{
+    background-color:blueviolet;
+    width: 70px;
+    position: absolute;
+    left: 150px;
+    bottom:20px;
+}
+
+
+/* 
+    Idem al absolute con la diferencia que toma como refencia al browser
+*/
+.fixed{
+    background-color:black;
+    width: 25px;
+    height: 25px;
+    position: fixed;
+    top: 25px;
+    left: 25px;
+}
+
+
+
+

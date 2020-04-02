@@ -33,6 +33,6 @@ p{
 9999
 */
 .main > #color > span{
-    color: cadetblue !important;
+    color: cadetblue;
 }
 

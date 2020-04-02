@@ -1,0 +1,9 @@
+.absoluto{
+    position: absolute;
+    width: 600px;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border: 1px solid #333;
+
+}

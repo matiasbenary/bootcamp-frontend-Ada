@@ -1,0 +1,8 @@
+.relativo{
+    position: relative;
+    width: 600px;
+    left: 20px;
+    top:20px;
+    background-color: #ccc;
+    background-origin: 1px solid #333;
+}

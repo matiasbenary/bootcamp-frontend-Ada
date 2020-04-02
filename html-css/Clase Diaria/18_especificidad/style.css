@@ -1,0 +1,38 @@
+/*
+    El numero mas alto es que aplica
+    0000 - ABCD 
+    A-Estilos en linea - 1000
+    B-Id - 0100
+    C-clases,atributos[],pseudo-clases: -  0010
+    D-elemento,pseudo-elemento:: - 0001
+
+    Solo se sobreescriben las propiedades
+*/
+
+/*0001*/
+p{
+    font-size: 50px;
+    color:red;
+    background-color: bisque;
+}
+/*0100*/
+#color{
+    color:blue;
+    font-size: 15px;
+}
+
+/*
+0120
+*/
+.main > #color > .spancito{
+    color: brown;
+}
+
+/*
+0111
+9999
+*/
+.main > #color > span{
+    color: cadetblue !important;
+}
+

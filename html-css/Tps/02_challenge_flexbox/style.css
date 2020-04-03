@@ -52,3 +52,16 @@ body{
 .left-form{
     margin-top: 25px;
 }
+
+.left-form-input{
+    height: 50px;
+    border: 1px solid hsl(0, 36%, 70%);
+    border-radius: 30px;
+    padding-left: 24px;
+}
+
+.left-form-input::placeholder{
+    color: hsl(0, 36%, 70%);
+    font-weight: 600;
+}
+

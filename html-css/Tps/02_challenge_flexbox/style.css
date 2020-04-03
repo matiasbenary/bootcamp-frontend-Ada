@@ -1,4 +1,3 @@
-@import url("https://fonts.google.com/specimen/Josefin+Sans");
 *{
     margin: 0;
     padding: 0;
@@ -33,6 +32,14 @@ body{
     margin-top: 150px;
     font-size: 64px;
     text-transform: uppercase;
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+    letter-spacing: 18px;
+}
+
+.left-title-mod{
+    color: black;
+    font-weight: 600;
 }
 
 .left-text{

@@ -1,0 +1,35 @@
+.container{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    background-color: antiquewhite;
+}
+/*
+ z-index me da la profundidad que estan posicionado los elementos,si tengo dos puedo decir cual va arriba del otro
+ El numero mayor se ubica mas arriba
+
+ opacity es para da transparencia,en 1 en opaco y 0 es totalmente transparente.
+
+*/
+.h1{
+    position: absolute;
+    top:-15px;
+    height: 150px;
+    width: 150px;
+    background-color: aquamarine;
+    border: 2px dotted darkcyan;
+    /* opacity: 0.5; */
+    z-index: 15;
+    
+}
+
+.h2{
+    position: absolute;
+    height: 75px;
+    width: 75px;
+    background-color: red;
+    border: 2px solid brown;
+    opacity: 0.5;
+    top:25px;
+    z-index: 20;
+}

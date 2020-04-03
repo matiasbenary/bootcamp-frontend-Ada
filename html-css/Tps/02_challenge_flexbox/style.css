@@ -44,6 +44,9 @@ body{
 
 .left-text{
     margin-top: 25px;
+    color: hsl(0, 36%, 70%);
+    font-size: 16px;
+    line-height: 28px;
 }
 
 .left-form{

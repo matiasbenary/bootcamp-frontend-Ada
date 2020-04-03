@@ -11,7 +11,7 @@
  opacity es para da transparencia,en 1 en opaco y 0 es totalmente transparente.
 
 */
-.h1{
+.hoja1{
     position: absolute;
     top:-15px;
     height: 150px;
@@ -23,7 +23,7 @@
     
 }
 
-.h2{
+.hoja2{
     position: absolute;
     height: 75px;
     width: 75px;

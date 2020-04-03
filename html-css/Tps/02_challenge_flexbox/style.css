@@ -17,11 +17,13 @@ body{
     display: flex;
     margin: auto;
     border: 1px solid black;
-   
+    background: linear-gradient(135deg,hsl(0, 0%, 100%),hsl(0, 100%, 98%));
 }
 
 .left{
-    padding: 0 175px
+    padding: 0 175px;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
 }
 
 .left-img{
@@ -50,10 +52,12 @@ body{
 }
 
 .left-form{
+    position: relative;
     margin-top: 25px;
 }
 
 .left-form-input{
+    width: 450px;
     height: 50px;
     border: 1px solid hsl(0, 36%, 70%);
     border-radius: 30px;
@@ -63,5 +67,27 @@ body{
 .left-form-input::placeholder{
     color: hsl(0, 36%, 70%);
     font-weight: 600;
+}
+
+.left-form-button{
+    position: absolute;
+    right: 25px;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    box-shadow: 0 5px 20px 1px hsl(0, 80%, 86%);
+}
+
+.left-form-button:hover{
+    box-shadow: 0 5px 20px 2px hsl(0, 93%, 68%);
+    height: 55px;
+    width: 105px;
+}
+
+.right-img{
+    height: 100%;
 }
 

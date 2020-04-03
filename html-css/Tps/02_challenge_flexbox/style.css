@@ -9,8 +9,36 @@ body{
     font-family: 'Josefin Sans', sans-serif;  
 }
 
+/* 
+    flex para dividir en dos
+    magin en auto para centrar
+*/
 .container{
     width: 1440px;
     display: flex;
-    margin: 0 auto;
+    margin: auto;
+    border: 1px solid black;
+   
+}
+
+.left{
+    padding: 0 175px
+}
+
+.left-img{
+    margin-top: 50px;
+}
+
+.left-title{
+    margin-top: 150px;
+    font-size: 64px;
+    text-transform: uppercase;
+}
+
+.left-text{
+    margin-top: 25px;
+}
+
+.left-form{
+    margin-top: 25px;
 }

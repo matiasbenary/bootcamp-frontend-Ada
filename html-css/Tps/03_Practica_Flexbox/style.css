@@ -20,7 +20,6 @@ body{
 
 .container{
   width: 1440px;
-  border: 1px black solid;
   margin:auto;
   /* text-align: center; */
   display: flex;
@@ -50,6 +49,7 @@ body{
 }
 
 .form input[type="email"]{
+  outline: none;
   margin-right: 15px;
   height: 50px;
   width: 350px;
@@ -63,7 +63,8 @@ body{
   color: hsl(223, 87%, 63%); 
 } */
 
-input[type="submit"]{
+.btn{
+  outline: none;
   height: 50px;
   padding: 0 50px;
   border-radius: 30px;
@@ -72,6 +73,15 @@ input[type="submit"]{
   color: #FFF;
   font-weight: 700;
   box-shadow: -1px 4px 19px -4px hsla(223, 87%, 63%,0.5) 
+}
+
+.btn:hover{
+  background-color: hsl(223, 87%, 45%);
+}
+
+.btn:active{
+  background-color: hsl(223, 87%, 25%);
+  box-shadow: none;
 }
 
 .ilustracion{

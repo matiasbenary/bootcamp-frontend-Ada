@@ -49,7 +49,8 @@ body{
   color: hsl(209, 33%, 12%);
 }
 
-.form_email{
+.form input[type="email"]{
+  margin-right: 15px;
   height: 50px;
   width: 350px;
   border-radius: 30px;
@@ -62,7 +63,7 @@ body{
   color: hsl(223, 87%, 63%); 
 } */
 
-.btn{
+input[type="submit"]{
   height: 50px;
   padding: 0 50px;
   border-radius: 30px;
@@ -75,4 +76,29 @@ body{
 
 .ilustracion{
   margin: 50px;
+  width: 50%;
+}
+
+.redes{
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.redes_hiper{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid hsl(223, 87%, 63%);
+  /* text-align: center;
+  line-height:50px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.fab{
+  color: hsl(223, 87%, 63%);
 }

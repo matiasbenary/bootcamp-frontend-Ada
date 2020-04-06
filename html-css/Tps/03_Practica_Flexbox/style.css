@@ -13,6 +13,11 @@
   box-sizing: content-box;
 }
 
+body{
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 20px;
+}
+
 .container{
   width: 1440px;
   border: 1px black solid;
@@ -29,10 +34,19 @@
 
 .title{
   margin-top: 35px;
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+}
+
+.title_mod{
+  font-weight: 700;
+  color: hsl(209, 33%, 12%);
 }
 
 .subtitle{
   margin: 25px 0;
+  font-weight: 300;
+  color: hsl(209, 33%, 12%);
 }
 
 .ilustracion{

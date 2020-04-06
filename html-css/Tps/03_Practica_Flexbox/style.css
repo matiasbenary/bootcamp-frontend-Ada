@@ -49,6 +49,30 @@ body{
   color: hsl(209, 33%, 12%);
 }
 
+.form_email{
+  height: 50px;
+  width: 350px;
+  border-radius: 30px;
+  padding-left: 25px;
+  border: 1px solid hsl(223, 100%, 88%);
+  color: hsl(223, 87%, 63%); 
+}
+
+/* .form_email::placeholder{
+  color: hsl(223, 87%, 63%); 
+} */
+
+.btn{
+  height: 50px;
+  padding: 0 50px;
+  border-radius: 30px;
+  border:none;
+  background-color: hsl(223, 87%, 63%);
+  color: #FFF;
+  font-weight: 700;
+  box-shadow: -1px 4px 19px -4px hsla(223, 87%, 63%,0.5) 
+}
+
 .ilustracion{
   margin: 50px;
 }

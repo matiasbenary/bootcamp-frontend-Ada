@@ -14,7 +14,7 @@ Les usuaries tiene que poder:
 
 - Ver el diseño óptimo de la web dependiendo del tamaño del dispositivo
 - Ver los estados del hover para cada elemento interactivo
-- Cargar su dirección de email usando un cmapo `input`
+- Cargar su dirección de email usando un campo `input`
 - Ver un mensaje de error cuando el `form` es submitteado si:
 	- El `input` está vacío. El mensaje de este error debería ser *"Whoops! It looks like you forgot to add your email"*
 	- La dirección del email no tiene un formato correcto (por ejemplo `nombre@google.com`). El mensaje para este error debería ser *"Please provide a valid email address"*

@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+.box{
+    background-color: #2e294a;
+    width: 500px;
+    padding: 1px;
+}
+
+.item{
+    margin: 15px;
+    height: 100px;
+    width: 100px;
+    color: #fff;
+    border: #fff 1px solid;
+    background-color: #0e6ba8;
+    text-align: center;
+    line-height: 100px;
+}

@@ -6,3 +6,35 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+.container{
+  width: 1440px;
+  border: 1px black solid;
+  margin:auto;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo{
+  margin-top: 75px;
+}
+
+.title{
+  margin-top: 35px;
+}
+
+.subtitle{
+  margin: 25px 0;
+}
+
+.ilustracion{
+  margin: 50px;
+}

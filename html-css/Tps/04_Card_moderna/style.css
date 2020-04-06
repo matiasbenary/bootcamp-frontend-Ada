@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+body{
+    background-color: #62BFE8;
+} 
+
+.container{
+
+}
+
+.card{
+    width: 450px;
+}
+
+.card_header{
+    position: relative;
+}
+
+/* 
+    uso absolute para sacarlo del flow,es decir que poner una cosa junto a otra sin interposición de ningún nexo o elemento de relación(yuxtaponer) by Isabel.
+*/
+.card_img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+.card_header_mod{
+    /* background-image: url(img1.jpeg); */
+    border: 2px solid black;
+    padding: 15px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.card_price{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    color: #FCFDFD;
+    background-color: #E4747C;
+}
+
+.card_flag{
+    background-color: #62BFE8;
+    color: #FCFDFD;
+    padding: 10px;
+    border-radius: 5px;
+}

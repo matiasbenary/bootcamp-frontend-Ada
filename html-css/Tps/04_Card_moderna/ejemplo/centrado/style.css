@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 450px;
+    width: 350px;
+    background-color: aqua;
+    padding: 20px 0 20px 20px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+	align-items: flex-start;
+}
+/* p{
+    width: 0;
+} */
+
+.price{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: black;
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: center;
+}
+
+.flag{
+    padding: 10px;
+    background-color: blue;
+    color:wheat;
+    border-radius: 5px;
+}

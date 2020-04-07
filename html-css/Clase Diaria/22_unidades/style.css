@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+html{
+    font-size: 10px;
+}
+
+.cont{
+    height: 600px;
+    width: 600px;
+    border: 2px solid;
+    background-color: azure;
+    font-size: 12px;
+}
+
+.container{
+    display: inline-block;
+    background-color: brown;
+}
+/* 
+    Unidades absolutas - estas no cambian 
+*/
+/* 
+    px son como lo metros,definen una medida que no depende de otro factores
+ */
+.px{
+    height: 150px;
+    width: 150px;
+}
+
+/* 
+    Unidades relativas - estas de[emde de otro factores(resolucion,otra medidas,etc)
+*/
+
+/* 
+    depende del contenedor padre,si tiene un height de 600 y coloco 20% va a tener un ancho de 120px
+*/
+.porc{
+    height: 20%;
+    width: 20%;
+}
+
+/* 
+    El viewport del navegador es el área de la ventana en donde el contenido web está visible,es decir el alto y ancho de mi ventana
+
+    vh viewport height que es en un funcio del alto de la ventana
+    vw viewport height que es en un funcio del ancho de la ventana
+
+    lo usaria login,hero,modal
+*/
+
+.viewport{
+    height: 10vh;
+    width: 10vw;
+}
+/* 
+    estan en funcion del tamaño de la fuente del elemento padre
+    em = 16px por defecto
+    em = 12px
+*/
+.em{
+    height: 10em ; /* 10 *  tamaño de la fuente (12)*/
+    width: 10em;
+}
+
+/* 
+    estan en funcion del tamaño de la fuente de fuente raíz
+    rem = 16px por defecto
+    rem = 10px se cambio por etiqueta Html 
+    Se utiliza para proporcionar elementos
+*/
+
+.rem{
+    height: 10rem;
+    width: 10rem;
+}

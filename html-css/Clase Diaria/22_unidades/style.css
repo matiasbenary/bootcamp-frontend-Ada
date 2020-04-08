@@ -4,7 +4,7 @@
     box-sizing: content-box;
 }
 html{
-    font-size: 10px;
+    /* font-size: 10px; */
 }
 
 .cont{
@@ -18,6 +18,7 @@ html{
 .container{
     display: inline-block;
     background-color: brown;
+    border: solid 1px black;
 }
 /* 
     Unidades absolutas - estas no cambian 
@@ -35,7 +36,7 @@ html{
 */
 
 /* 
-    depende del contenedor padre,si tiene un height de 600 y coloco 20% va a tener un ancho de 120px
+    depende del contenedor padre,si tiene un height de 600 y coloco 20% va a tener un alto de 120px (20% de 600 es 120)
 */
 .porc{
     height: 20%;
@@ -61,7 +62,7 @@ html{
     em = 12px
 */
 .em{
-    height: 10em ; /* 10 *  tamaño de la fuente (12)*/
+    height: 10em ; /* 10 *  tamaño de la fuente (12)     10 *12px 120px*/
     width: 10em;
 }
 

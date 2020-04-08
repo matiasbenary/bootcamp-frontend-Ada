@@ -38,16 +38,15 @@ p{
 }
 
 body{
-    max-width: 1200px;
-    margin: auto;
     font-family: 'Open Sans', sans-serif;
 }
 
 header{
+    width: 90%;
+    margin: 50px auto 0 auto;
     font-family: 'Raleway', sans-serif;
     display: flex;
     justify-content: space-between;
-    margin: 50px 0;
 }
 
 nav{
@@ -72,8 +71,19 @@ nav{
     align-items: en el eje y
 */
 .container{
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     align-items: center;
+    padding: 130px 5% 0 5%;
+}
+
+.container-left,.container-rigth{
+    width: 50%;
+}
+
+.container-left{
+    margin-right: 15px;
 }
 
 .container-img{
@@ -109,4 +119,18 @@ nav{
     border: none;
     background-color: var(--azul-brillante);
     color: var(--gris-azul);
+}
+
+/* 
+    cuando uso % en el padding en funcion al ancho
+*/
+.container-bg{
+    background: var(--gris-azul);
+}
+
+.container-bg-curve{
+    background: url(images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
 }

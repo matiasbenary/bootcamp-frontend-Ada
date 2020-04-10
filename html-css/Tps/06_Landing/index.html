@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <script src="https://kit.fontawesome.com/cd76ad0e9d.js" crossorigin="anonymous"></script>
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -55,15 +55,27 @@
     <p class="container-text">  
       Securely share files and folders with friends, family and colleagues for 
       live collaboration. No email attachments required!</p>
-    <a href="" class="container-link">See how Fylo works</a>
+      <div class="container-link">
+        <a href="" >See how Fylo works</a>
+        <img src="images/icon-arrow.svg" alt="">
+      </div>
     
     <div class="info-box">
-  
-      Fylo has improved our team productivity by an order of magnitude. Since 
-      making the switch our team has become a well-oiled collaboration machine.
+      <img src="images/icon-quotes.svg" alt="comillas">
+      <p>
+        Fylo has improved our team productivity by an order of magnitude. Since 
+        making the switch our team has become a well-oiled collaboration machine.
+      </p>
+      <div class="profile">
+        <img class="profile-img" src="images/avatar-testimonial.jpg" alt="avatar">
+        <div class="profile-title">
+          <p class="profile-title-name">Kyle Burton</p>
+          <p>Founder & CEO, Huddle</p>
+        </div>  
+      </div>
     
-      Kyle Burton
-      Founder & CEO, Huddle
+      
+      
     </div>
 
   </div>
@@ -73,24 +85,66 @@
 </section>
 
 <!-- Section3 -->
-  Get early access today
-
-  It only takes a minute to sign up and our free starter tier is extremely generous. 
-  If you have any questions, our support team would be happy to help you.
-
-  Get Started For Free
+<section class="container container-contact">
+  <div class="container-left">
+      <h1 class="container-title">Get early access today</h1>
+      <p class="container-text">It only takes a minute to sign up and our free starter tier is extremely generous. 
+      If you have any questions, our support team would be happy to help you.</p>
+  </div>
+  <div class="container-rigth">
+    <form action="">
+      <input class="container-rigth-input" type="text" name="" placeholder="email@example.com">
+      <button class="contact-input-button">Get Started For Free</button>
+    </form>
+    
+  </div>
+</section>
 <!-- footer -->
-  Phone: +1-543-123-4567
-  example@fylo.com
 
-  About Us
-  Jobs
-  Press
-  Blog
+<footer class="footer">
+  <div class="footer-box">
+    <img class="footer-logo" src="images/logo.svg">
+    <svg src="images/logo.svg"></svg>
 
-  Contact Us
-  Terms
-  Privacy
+    <div class="footer-lists">
+      <ul class="footer-list">
+        <li><i class="fa fa-phone"></i>Phone: +1-543-123-4567</li>
+        <li><i class="fa fa-envelope"></i>example@fylo.com</li>
+      </ul>
+
+      <ul class="footer-list">
+        <li>About Us</li>
+        <li>Jobs</li>
+        <li>Press</li>
+        <li>Blog</li>
+      </ul>
+
+      <ul class="footer-list">
+        <li>Contact Us</li>
+        <li>Terms</li>
+        <li>Privacy</li>
+      </ul>
+
+
+      <div class="social">
+
+        <div class="box">
+          <i class="fa fa-facebook"></i>
+        </div>
+
+        <div class="box">
+          <i class="fa fa-twitter"></i>
+        </div>
+
+        <div class="box">
+          <i class="fa fa-instagram"></i>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</footer>
 
   <footer>
     <p class="attribution">

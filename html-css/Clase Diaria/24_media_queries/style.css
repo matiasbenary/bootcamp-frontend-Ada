@@ -1,0 +1,57 @@
+
+/* 
+    media queries
+    en funcion del disposivo que voy a usar se van a cambiar los estilos
+    es un condicional
+
+    media type (tipo de medio)
+    all todos
+    screen lo de una pantalla
+    print es para material impreso
+    speech dispositivos de voz
+
+    orientacion 
+    landscape: horizontal
+    portrait: vertical
+
+    por ancho:
+    min-width: mobile first
+    max-width: desktop first
+
+*/
+/* 
+    font-size: rem
+    margin y pading: em
+    width: em %
+*/
+body {    
+    background-color: white;  
+}
+.box{
+    width: 50%;
+    height: 25vh;
+    background-color: brown;
+}
+/* 500px
+    fondo violeta
+
+*/
+/* screen una pantalla y si supera los 480px hace lo siguiente */
+ @media screen and (min-width: 800px) {  
+    body {    
+        background-color: aqua;  
+    }
+} 
+
+@media screen and (min-width:480px) and (max-width: 800px) {  
+    body {    
+        background-color: blueviolet;  
+    }
+
+    .box{
+        width: 75%;
+        height: 250px;
+        background-color: blue;
+        border: 10px solid wheat;
+    }
+} 

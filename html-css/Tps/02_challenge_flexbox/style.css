@@ -1,93 +1,221 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Josefin Sans', sans-serif;  
+body {
+  font-family: "Josefin Sans", sans-serif;
 }
 
 /* 
     flex para dividir en dos
     magin en auto para centrar
 */
-.container{
-    width: 1440px;
-    display: flex;
-    margin: auto;
-    border: 1px solid black;
-    background: linear-gradient(135deg,hsl(0, 0%, 100%),hsl(0, 100%, 98%));
+.container {
+  width: 1440px;
+  display: flex;
+  margin: auto;
+  border: 1px solid black;
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 }
 
-.left{
-    padding: 0 175px;
+.left {
+  padding: 0 175px;
+  background-image: url(./images/bg-pattern-desktop.svg);
+  background-repeat: no-repeat;
+}
+
+.left-img {
+  margin-top: 50px;
+}
+
+.left-img-hero {
+  display: none;
+}
+
+.left-title {
+  margin-top: 150px;
+  font-size: 64px;
+  text-transform: uppercase;
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+  letter-spacing: 18px;
+}
+
+.left-title-mod {
+  color: black;
+  font-weight: 600;
+}
+
+.left-text {
+  margin-top: 25px;
+  color: hsl(0, 36%, 70%);
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.left-form {
+  position: relative;
+  margin-top: 25px;
+}
+
+.left-form-input {
+  width: 80%;
+  height: 50px;
+  border: 1px solid hsl(0, 36%, 70%);
+  border-radius: 30px;
+  padding-left: 24px;
+}
+
+.left-form-input::placeholder {
+  color: hsl(0, 36%, 70%);
+  font-weight: 600;
+}
+
+.left-form-button {
+  position: absolute;
+  right: 25px;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  box-shadow: 0 5px 20px 1px hsl(0, 80%, 86%);
+}
+
+.left-form-button:hover {
+  box-shadow: 0 5px 20px 2px hsl(0, 93%, 68%);
+  height: 55px;
+  width: 105px;
+}
+
+.right-img {
+  height: 100%;
+}
+/* 
+    desktop first
+    Si es pantalla y el ancho es menor a 480px aplicar lo siguiente
+*/
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+
+  .left {
+    padding: 0;
     background-image: url(./images/bg-pattern-desktop.svg);
     background-repeat: no-repeat;
-}
+  }
 
-.left-img{
+  .left-img {
+    margin: 20px 0 0 10px;
+  }
+
+  .left-img-hero {
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+  }
+
+  .left-title {
+    padding: 5px;
+    text-align: center;
     margin-top: 50px;
-}
+    font-size: 48px;
+  }
 
-.left-title{
-    margin-top: 150px;
-    font-size: 64px;
-    text-transform: uppercase;
-    color: hsl(0, 36%, 70%);
-    font-weight: 300;
-    letter-spacing: 18px;
-}
+  .left-text {
+    padding: 5px;
+    text-align: center;
+  }
 
-.left-title-mod{
-    color: black;
-    font-weight: 600;
+  .right-img {
+    display: none;
+  }
 }
+/* @media screen and (max-width: 480px) {  
+    .container{
+        width: 100%;
+        flex-direction: column;
+    }
 
-.left-text{
-    margin-top: 25px;
-    color: hsl(0, 36%, 70%);
-    font-size: 16px;
-    line-height: 28px;
-}
+    .left{
+        padding: 0;
+        background-image: url(./images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+    }
+    
+    .left-img{
+        margin: 20px 0px 0 10px;
+    }
 
-.left-form{
-    position: relative;
-    margin-top: 25px;
-}
-
-.left-form-input{
-    width: 450px;
-    height: 50px;
-    border: 1px solid hsl(0, 36%, 70%);
-    border-radius: 30px;
-    padding-left: 24px;
-}
-
-.left-form-input::placeholder{
-    color: hsl(0, 36%, 70%);
-    font-weight: 600;
-}
-
-.left-form-button{
-    position: absolute;
-    right: 25px;
-    width: 100px;
-    height: 50px;
-    cursor: pointer;
-    border: none;
-    border-radius: 30px;
-    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
-    box-shadow: 0 5px 20px 1px hsl(0, 80%, 86%);
-}
-
-.left-form-button:hover{
-    box-shadow: 0 5px 20px 2px hsl(0, 93%, 68%);
-    height: 55px;
-    width: 105px;
-}
-
-.right-img{
-    height: 100%;
-}
-
+    .left-img-hero{
+        display:block;
+        width: 100%;
+    }
+    
+    .left-title{
+        text-align: center;
+        margin-top: 50px;
+        font-size: 48px;
+        text-transform: uppercase;
+        color: hsl(0, 36%, 70%);
+        font-weight: 300;
+        letter-spacing: 18px;
+    }
+    
+    .left-title-mod{
+        color: black;
+        font-weight: 600;
+    }
+    
+    .left-text{
+        text-align: center;
+        margin-top: 25px;
+        color: hsl(0, 36%, 70%);
+        font-size: 16px;
+        line-height: 28px;
+    }
+    
+    .left-form{
+        position: relative;
+        margin-top: 25px;
+    }
+    
+    .left-form-input{
+        
+        height: 50px;
+        border: 1px solid hsl(0, 36%, 70%);
+        border-radius: 30px;
+        padding-left: 24px;
+    }
+    
+    .left-form-input::placeholder{
+        color: hsl(0, 36%, 70%);
+        font-weight: 600;
+    }
+    
+    .left-form-button{
+        position: absolute;
+        right: 25px;
+        width: 100px;
+        height: 50px;
+        cursor: pointer;
+        border: none;
+        border-radius: 30px;
+        background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+        box-shadow: 0 5px 20px 1px hsl(0, 80%, 86%);
+    }
+    
+    .left-form-button:hover{
+        box-shadow: 0 5px 20px 2px hsl(0, 93%, 68%);
+        height: 55px;
+        width: 105px;
+    }
+    
+    .right-img{
+        display: none;
+    }
+} */

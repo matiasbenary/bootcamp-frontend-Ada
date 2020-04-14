@@ -6,3 +6,80 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  text-decoration: none;
+}
+
+body{
+  font-family: 'Public Sans', sans-serif;
+  font-size: 18px;
+  overflow-x: hidden;
+}
+
+.header{
+  border: 1px solid black;
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+  background-color: #fff;
+  z-index: 10;
+  position: relative;
+}
+
+/* .header__nav{
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} */
+.header__nav__link{
+  margin: 0 15px;
+  color: hsl(233, 8%, 62%);
+}
+
+.btn{
+  padding: 10px 30px;
+  color: #fff;
+  background-image: linear-gradient(120deg,hsl(136, 65%, 51%),hsl(192, 70%, 51%));
+  border-radius: 30px;
+  border: none;
+}
+
+.hero{
+  border: 1px solid black;
+  padding: 0 10%;
+  display: flex;
+  height: 550px;
+}
+
+.hero__left{
+  width: 50%;
+}
+
+.hero__right{
+  width: 50%;
+  position: relative;
+  border: 1px solid black;
+}
+
+.hero__right__bg{
+  position: absolute;
+  top:-75px;
+  left: 350px;
+  z-index: -15;
+  height: 100%;
+  transform: scale(1.5);
+}
+
+.hero__right__img{
+  position: absolute;
+  top:-125px;
+  right: -320px;
+  z-index: -10;
+}

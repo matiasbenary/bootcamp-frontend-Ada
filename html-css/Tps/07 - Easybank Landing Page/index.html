@@ -7,30 +7,49 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | Easybank landing page</title>
-
+  <link href="https://fonts.googleapis.com/css?family=Public+Sans:300,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-  <header>
-    Home
-    About
-    Contact
-    Blog
-    Careers
-  
-    Request Invite
+  <!-- 
+    bloque header
+    elemento  header__img-logo
+    modificador header__img-logo--rojo
+   -->
+  <header class="header">
+    <div class="header__img-logo">
+      <img src="images/logo.svg" alt="">
+    </div>
+    <nav class="header__nav">
+      <a href="" class="header__nav__link">Home</a>
+      <a href="" class="header__nav__link">About</a>
+      <a href="" class="header__nav__link">Contact</a>
+      <a href="" class="header__nav__link">Blog</a>
+      <a href="" class="header__nav__link">Careers</a>
+    </nav>
+    
+    <div class="header__action">
+     
+    </div>
   </header>
  <!-- Hero -->
-<section>
-  Next generation digital banking
-
-  Take your financial life online. Your Easybank account will be a one-stop-shop
-  for spending, saving, budgeting, investing, and much more.
-
-  Request Invite
+<section class="hero">
+  <div class="hero__left">
+    <h1 class="hero__left__title"> Next generation digital banking</h1>
+    <p class="hero__left__text">
+      Take your financial life online. Your Easybank account will be a one-stop-shop
+      for spending, saving, budgeting, investing, and much more.
+    </p>
+    <button class="btn btn--request-invite">Request Invite</button>
+  </div>
+  <div class="hero__right">
+    <img src="images/bg-intro-desktop.svg" class="hero__right__bg" alt="">
+    <img src="images/image-mockups.png" class="hero__right__img"alt="">
+  </div>
+ 
 </section>
-<!-- section -->
+<!-- section-->
 <section>
   Why choose Easybank?
 
@@ -52,7 +71,7 @@
   Open API
   Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.
 </section>
-<!-- lista de articulos -->
+<!__ lista de articulos __>
 <section>
   Latest Articles
 
@@ -76,7 +95,7 @@
   After a lot of hard work by the whole team, we’re excited to launch our closed beta.
   It’s easy to request an invite through the site ...
 </section>
-<!-- footer -->
+<!__ footer __>
 <footer>
   About Us
   Contact

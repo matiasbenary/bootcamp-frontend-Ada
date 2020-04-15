@@ -21,31 +21,31 @@ body {
     overflow-x: hidden;
 }
 
-body:after {
-    position: absolute;
-    background-color: var(--lightGrayishBlue);
-    border-bottom-left-radius: 100px;
+body::after {
     content: " ";
+    background-color:  var(--lightGrayishBlue);
+    position: absolute;
+    height: 55vh;
+    width: 50vw;
     top:0;
     right: 0;
-    height: 50vh;
-    width: 50vw;
     z-index: -10;
-}
+    border-bottom-left-radius: 100px ;
+} 
 
 .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
-}
-
-.navbar__nav__menu{
-    width: 100%;
+    padding: 1rem; 
 }
 
 .navbar__nav__list{
     display: none;
+}
+
+.navbar__nav__menu{
+    width: 100%;
 }
 
 .img-block{

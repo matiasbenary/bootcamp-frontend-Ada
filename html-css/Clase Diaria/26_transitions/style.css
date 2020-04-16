@@ -1,0 +1,24 @@
+/*
+transition-property: define la propiedad a transicionar , se separa por comas y si colocamos all se aplica a todo
+transition-duration: define el tiempo que tarda
+transition-timing-function: la velocidad en cada instante
+transition-delay: retraso a la animacion
+transition ( transition-property transition-duration transition-timing-function transition-delay) ,( transition-property transition-duration transition-timing-function transition-delay)
+*/
+.box{
+    background: #3212FF;
+    width: 600px;
+    height: 200px;
+    /* transition-property: all;
+    transition-duration: 3s;
+    transition-timing-function: ease;
+
+    transition-delay: 0.5s; */
+    transition: width 1.5s ease 0.5s, background 0.5s linear 0.1s;
+}
+
+.box:hover{
+    background: red;
+    width: 150px;
+    /* transform: translate(200px,100px) scale(2) rotate(150deg) skew(0deg, 25deg); */
+}

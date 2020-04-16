@@ -7,4 +7,6 @@
 
 * [Media Queries](https://www.freecodecamp.org/news/how-to-start-thinking-responsively/)
 
+* [cubic bezier - desplazamiento en css](https://ada7matm.github.io/pages/transition.html)
+
 

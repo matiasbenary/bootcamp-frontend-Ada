@@ -1,0 +1,19 @@
+/*
+ transform tranforma un elemento,
+ traslate cambiar posicion
+*/
+
+.box{
+    background: #3212FF;
+    width: 200px;
+    height: 200px;
+    /* transform: translate(200px,100px); */
+    /* transform: scale(2); */
+    /* transform: rotate(150deg); */
+    /* transform: skew(0deg, 25deg); */
+    
+}
+
+.box:hover{
+    transform: translate(200px,100px) scale(2) rotate(150deg) skew(0deg, 25deg);
+}

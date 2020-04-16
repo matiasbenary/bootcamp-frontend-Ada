@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("img/bg.jpg");
+  font-family: 'Cedarville Cursive', cursive;
+}
+
+.gallery {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.pic {
+  font-size: 15px;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  box-shadow: 1px 2px 3px black;
+  transition: 0.3s;
+}
+
+img {
+  height: 300px;
+}
+
+.pic:hover {
+  box-shadow: 5px 10px 100px black;
+  transform: scale(1.5);
+  z-index: 20;
+  filter: sepia(100%);
+}
+
+.pic1 {
+  transform: rotate(-10deg);
+  z-index: 1;
+}
+
+.pic2 {
+  transform: rotate(15deg);
+  z-index: 2;
+  
+}
+
+.pic3 {
+  transform: rotate(-25deg);
+  z-index: 1;
+}
+
+.pic4 {
+  transform: rotate(5deg);
+  z-index: 1;
+}
+
+.pic5 {
+  transform: rotate(5deg);
+  z-index: 1;
+}
+
+.pic6 {
+  transform: rotate(-8deg);
+  z-index: 1;
+}
+
+.pic7 {
+  transform: rotate(2deg);
+  z-index: 1;
+}
+
+.pic8 {
+  transform: rotate(-13deg);
+  z-index: 1;
+}
+
+.pic9 {
+  transform: rotate(-7deg);
+  z-index: 1;
+}
+
+.pic10 {
+  transform: rotate(2deg);
+  z-index: 1;
+}
+.pic11 {
+  transform: rotate(-3deg);
+  z-index: 1;
+}

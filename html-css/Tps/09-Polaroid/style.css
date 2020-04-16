@@ -34,7 +34,6 @@ img {
   box-shadow: 5px 10px 100px black;
   transform: scale(1.5);
   z-index: 20;
-  filter: sepia(100%);
 }
 
 .pic1 {

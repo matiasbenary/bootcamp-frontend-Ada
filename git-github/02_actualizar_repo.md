@@ -11,7 +11,9 @@
 
 ## Actualizar Repositorio
 
-* Entramos por consola a la carpeta que tengo el repositorio.
+* Entramos por consola a la carpeta que del repositorio creado.
 
 * Ejecutamos el comando git pull origin master
+
+* Muestra los archivos modificados,creados y eliminados
 

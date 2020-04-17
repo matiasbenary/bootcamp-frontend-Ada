@@ -5,9 +5,11 @@
 }
 
 .container{
-    position: relative;
     background: blue;
     width: 300px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     /* padding: 25px; */
 }
 
@@ -21,18 +23,3 @@
     height: 100px;
     margin: 20px;
 }
-/* 
-Float: saca del flujo el elemento como position absolute
-left: me alinia el elmento hacia la izquierda
-right: idem pero a la derecha
- */
-.box1{
-    float: right;
-}
-
-.box2{
-    float: left;
-}
-.clear{
-    clear: both;
-} 

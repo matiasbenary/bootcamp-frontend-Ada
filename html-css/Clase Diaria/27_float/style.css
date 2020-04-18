@@ -32,7 +32,11 @@ right: idem pero a la derecha
 
 .box2{
     float: left;
-}
+}  
+/* 
+    Para recuperar el flow normal usamos clear,
+    es como hacer un diplay block.
+ */
 .clear{
     clear: both;
 } 

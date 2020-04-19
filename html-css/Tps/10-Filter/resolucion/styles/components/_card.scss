@@ -31,7 +31,6 @@
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-
     @media screen and (min-width: $sm){
         flex-direction: row;
         align-items: center;
@@ -43,7 +42,6 @@
         border-bottom: $label-color 1px solid;
         margin-bottom: $sp3;
         padding-bottom: $sp3;
-
         @media screen and (min-width: $sm){
             border-bottom: none;
             margin-bottom: 0;
@@ -77,14 +75,15 @@
 
   .card__info {
     @media screen and (min-width: $sm){
-        
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
   }
 
   .card__subtitle {
     color: $primary-color;
     font-size: $font-size;
-    margin: $sp3 0;
   }
 
   .card__subtitle__texts {

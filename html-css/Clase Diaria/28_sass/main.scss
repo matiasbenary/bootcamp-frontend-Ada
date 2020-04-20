@@ -1,0 +1,59 @@
+// se usa $ para variables no se compilan directamente,se remplaza el valor
+$color-primary:#f31247;
+$color-mobile:#f3ff47;
+.container{
+    width: 70%;
+    height: 600px;
+    background-color: $color-primary;
+
+    @media screen and (min-width:480px){
+        background-color: $color-mobile;
+    }
+
+    .box{
+        border: 1px solid #000;
+        width: 20%;
+        height: 60px;
+        background-color: #127687;
+        @media screen and (min-width:480px){
+            background-color: #727997;
+        }
+        // Con estoy diciendo que los hermanos de box apliquen los siguientes estilos
+        ~ .box{
+            width: 15%;
+            background-color: #134687;
+        }
+    }
+
+
+}
+
+.btn{
+    padding: 15px 30px;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.5s;
+    // Cuando coloco & hago referencia a la clase y le agrego lo siguiente, 
+    // ej: btn {  &-red{color:red}} 
+    // se traduce como btn-red{color:red}
+    &-primary{
+        color: #fff;
+        background-color: #127687;
+    }
+
+    &-success{
+        color: #fff;
+        background-color: #128712;
+    }
+    &-danger{
+        color: #fff;
+        background-color: #872912;
+    }
+
+    &:hover{
+        transform: scale(1.2);
+    }
+   
+}

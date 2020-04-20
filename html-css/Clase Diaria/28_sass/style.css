@@ -1,0 +1,51 @@
+.container {
+  width: 70%;
+  height: 600px;
+  background-color: #f31247;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    background-color: #f3ff47;
+  }
+}
+.container .box {
+  border: 1px solid #000;
+  width: 20%;
+  height: 60px;
+  background-color: #127687;
+}
+@media screen and (min-width: 480px) {
+  .container .box {
+    background-color: #727997;
+  }
+}
+.container .box ~ .box {
+  width: 15%;
+  background-color: #134687;
+}
+
+.btn {
+  padding: 15px 30px;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #127687;
+}
+.btn-success {
+  color: #fff;
+  background-color: #128712;
+}
+.btn-danger {
+  color: #fff;
+  background-color: #872912;
+}
+.btn:hover {
+  transform: scale(1.2);
+}
+
+/*# sourceMappingURL=style.css.map */

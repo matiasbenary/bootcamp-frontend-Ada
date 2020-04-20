@@ -1,0 +1,10 @@
+header{
+    height: 10vh;
+    background: url('../../images/bg-header-mobile.svg'),$primary-color;
+
+    margin-bottom: $sp7;
+
+    @media screen and (min-width:$sm){
+        background: url('../../images/bg-header-desktop.svg'),$primary-color;
+    }
+}

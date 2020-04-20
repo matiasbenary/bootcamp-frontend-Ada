@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Spartan:500,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #effafa;
+  font-size: 15px;
+  font-family: "Spartan";
+}
+
+header {
+  height: 10vh;
+  background: url("../../images/bg-header-mobile.svg"), #5ba4a4;
+  margin-bottom: 4rem;
+}
+@media screen and (min-width: 680px) {
+  header {
+    background: url("../../images/bg-header-desktop.svg"), #5ba4a4;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

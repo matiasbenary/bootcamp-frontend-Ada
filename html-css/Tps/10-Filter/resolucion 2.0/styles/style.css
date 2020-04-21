@@ -5,6 +5,89 @@
   box-sizing: border-box;
 }
 
+.badge {
+  padding: 0.5rem 0.75rem;
+  text-transform: uppercase;
+  border-radius: 40px;
+  color: #FFF;
+}
+.badge--primary {
+  background-color: #5ba4a4;
+}
+.badge--black {
+  background-color: #000;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px -7px rgba(91, 164, 164, 0.5);
+  padding: 1rem;
+}
+.card--selected {
+  border-left: 5px solid #5ba4a4;
+}
+.card .card__column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.card .card__column--left {
+  border-bottom: 1px solid #7b8e8e;
+}
+.card .card__column--rigth {
+  padding-top: 1rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card .card__column .card__img {
+  height: 75px;
+  width: 75px;
+  margin-top: -55px;
+}
+.card .card__column .card__subtitle {
+  color: #5ba4a4;
+  font-size: 15px;
+  margin: 1rem 0;
+}
+.card .card__column .card__title {
+  cursor: pointer;
+  margin: 1rem 0;
+}
+.card .card__column .card__title:hover {
+  color: #5ba4a4;
+}
+.card .card__column .card__detail {
+  display: flex;
+  align-items: center;
+  color: #7b8e8e;
+  margin-bottom: 1rem;
+}
+.card .card__column .card__detail .card__detail__item:nth-last-child(n+2)::after {
+  content: " ";
+  width: 3px;
+  height: 3px;
+  border-radius: 3px;
+  display: inline-block;
+  background-color: #7b8e8e;
+  margin: 5px 1rem;
+}
+.card .card__column .card__tag {
+  padding: 0.75rem 1rem;
+  margin: 0.75rem 0.5rem;
+  background-color: #effafa;
+  font-weight: 700;
+  font-size: 15px;
+  color: #5ba4a4;
+  border-radius: 5px;
+}
+.card .card__column .card__tag:hover {
+  color: #fff;
+  background-color: #5ba4a4;
+}
+
 body {
   background-color: #effafa;
   font-size: 15px;
@@ -12,7 +95,7 @@ body {
 }
 
 header {
-  height: 10vh;
+  height: 150px;
   background: url("../../images/bg-header-mobile.svg"), #5ba4a4;
   margin-bottom: 4rem;
 }
@@ -20,6 +103,11 @@ header {
   header {
     background: url("../../images/bg-header-desktop.svg"), #5ba4a4;
   }
+}
+
+main {
+  width: 90%;
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -7,56 +7,54 @@
   box-shadow: $box-shawdow;
   border-radius: 10px;
   margin-bottom: $sp5;
-  
-  &--selected{
-      border-left: 5px solid $primary-color;
+
+  &--selected {
+    border-left: 5px solid $primary-color;
   }
 
-  @media screen and (min-width: $sm){
+  @media screen and (min-width: $sm) {
     width: 100%;
     height: auto;
     padding: 35px 40px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0px 10px 15px -7px rgba(93,164,164,0.5);
+    box-shadow: 0px 10px 15px -7px rgba(93, 164, 164, 0.5);
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-
-}
+  }
   .card__column {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    @media screen and (min-width: $sm){
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    
+    @media screen and (min-width: $sm) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
     }
 
-    &--left{
-        border-bottom: $label-color 1px solid;
-        margin-bottom: $sp3;
-        padding-bottom: $sp3;
-        @media screen and (min-width: $sm){
-            border-bottom: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
+    &--left {
+      border-bottom: $label-color 1px solid;
+      margin-bottom: $sp3;
+      padding-bottom: $sp3;
+      @media screen and (min-width: $sm) {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
     }
 
-    &--rigth{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        @media screen and (min-width: $sm){
-            width: auto;
-        }
+    &--rigth {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      @media screen and (min-width: $sm) {
+        width: auto;
+      }
     }
   }
 
@@ -65,16 +63,16 @@
     width: 80px;
     margin-top: -65px;
 
-    @media screen and (min-width: $sm){
-        height: auto;
-        width: auto;
-        margin-top: 0;
-        margin-right: $sp3;
+    @media screen and (min-width: $sm) {
+      height: auto;
+      width: auto;
+      margin-top: 0;
+      margin-right: $sp3;
     }
   }
 
   .card__info {
-    @media screen and (min-width: $sm){
+    @media screen and (min-width: $sm) {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -103,7 +101,7 @@
   }
 
   .card__detail__item {
-    &:nth-last-child(n+2)::after {
+    &:nth-last-child(n + 2)::after {
       content: "";
       width: 3px;
       height: 3px;
@@ -125,9 +123,9 @@
     margin: 7.5px 5px;
     cursor: pointer;
 
-    &:hover{
-        color: #fff;
-        background-color: $primary-color;
+    &:hover {
+      color: #fff;
+      background-color: $primary-color;
     }
   }
 }

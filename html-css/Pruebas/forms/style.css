@@ -1,0 +1,19 @@
+.form-group {
+  position: relative;
+  padding-top: 1.5rem;
+  border: 1px solid black;
+}
+
+label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.2s ease-out;
+}
+
+input:placeholder-shown + label {
+  opacity: 0;
+  transform: translateY(1rem);
+}

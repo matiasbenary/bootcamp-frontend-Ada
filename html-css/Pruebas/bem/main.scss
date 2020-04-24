@@ -1,0 +1,18 @@
+.card {
+  display: inline-block;
+  width: 400px;
+  height: 600px;
+  border: 1px solid #000;
+  &--selected {
+    border: 10px solid #456;
+  }
+  //   .card__title {
+  &__title {
+    font-size: 48px;
+
+    &--red {
+      color: red;
+      font-size: 64px;
+    }
+  }
+}

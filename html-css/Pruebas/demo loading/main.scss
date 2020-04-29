@@ -8,7 +8,7 @@
   transform-origin: center center;
 }
 
-@for $num from 1 through 8 {
+@for $num from 1 through 12 {
   .circle:nth-child(#{$num}) {
     left: ($num - 1) * 30px;
     animation-delay: $num * 0.1s;

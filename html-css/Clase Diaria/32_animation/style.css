@@ -1,22 +1,55 @@
+/* 
+  animation-name: nombre de la animacion;
+  animation-duration: tiempo de duracion;
+  animation-timing-function: es velocidad del comportamiento;
+  animation-iteration-count: cantidad de veces a realizar el comportamiento,infinite para infinito;
+  animation-direction: sentido de comportamiento
+    normal:0% a 100%; 
+    reverse:100% a 0%; 
+    alternate:0% a 100% y 100% a 0%; 
+    alternate-reverse:100% al 0 y 0 a 100%; 
+  animation-delay: tiempo de retardo para empezar la animacion; 
+  animation-fill-mode: como quedan los estilos al aplicar la animacion
+    normal: los estilos no cambian ni antes ni despues de la animacion
+    backwards: antes de que empize la animacion se aplican los estilos 
+    forwards: idem pero despues de que termina la animacion
+    both:es ambos
+
+*/
 p {
   display: inline-block;
   border: 1px solid black;
-  animation-duration: 10s;
-  animation-name: bounceIn;
-  animation-timing-function: ease-in-out;
-  animation-delay: 5s;
+  color: aqua;
+  animation-name: lele;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+  /* animation-delay: 1s; */
+  animation-iteration-count: 2;
+  /* animation-direction: alternate-reverse; */
+  animation-fill-mode: both;
+  /* animation: lele 2s linear 1s 3 both; */
 }
 
-@keyframes bounceIn {
+p:hover {
+  animation-play-state: paused;
+}
+
+@keyframes lele {
   0% {
-    transform: scale(1.6);
-    opacity: 0;
+    transform: scale(3);
+    opacity: 0.1;
+    color: green;
+    transform: rotate(0deg);
   }
   60% {
-    transform: scale(1.2);
+    transform: scale(0.2);
     opacity: 1;
+    color: red;
+    transform: rotate(270deg);
   }
   100% {
-    transform: scale(1);
+    transform: scale(1.5);
+    color: burlywood;
+    transform: rotate(360deg);
   }
 }

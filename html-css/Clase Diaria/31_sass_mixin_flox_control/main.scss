@@ -1,25 +1,48 @@
-@mixin flex {
+/*
+Mixin: Se usan para estar escribiendo propiedades 
+@mixin nombre: es para definir,dentro van las propiedades que quiero
+@include nombre: es para aplicarlo
+
+*/
+@mixin flex($justify: center, $align: center) {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: $justify;
+  align-items: $align;
 }
 
+// Se puede incluir parametros
 @mixin square($size) {
   width: $size;
   height: $size;
 }
-
+.test {
+  @include square(65px);
+}
+@mixin shadow($x, $y) {
+  box-shadow: $x $y 5px 0px rgba(0, 0, 0, 0.75);
+}
 @mixin circle($size) {
   @include square($size);
   border-radius: $size;
 }
-
-@mixin rectangle($width, $height, $radius: 0) {
+// primero los  parametros obligatorios,y despues lo opcionales,son lo que tienen un valor por defecto.
+@mixin rectangle($height, $width: 100px, $radius: 0) {
   width: $width;
   height: $height;
+  //  0!= 0
+  /*
+    Si radio es diferente a 0
+    aplicame el border radius
+  */
   @if $radius != 0 {
     border-radius: $radius;
   }
+}
+.rectangle {
+  @include flex;
+  @include rectangle(300px, 100px, 50px);
+  border: 1px solid black;
+  background-color: red;
 }
 
 @mixin hover {
@@ -29,16 +52,24 @@
   }
 }
 
-$spaces: 0.25rem, 0.5rem, 1rem, 1.5rem, 2rem, 3rem, 4rem;
+.circle {
+  @include circle(100px);
+  @include flex;
 
-// @each $space in $spaces {
-//   .icon:before {
-//     content: $space;
-//   }
-// }
+  @include hover {
+    color: bisque;
+    font-size: 45px;
+  }
+
+  border: 1px solid black;
+  background-color: red;
+}
+
+$spaces: 0.25rem, 0.5rem, 1rem, 1.5rem, 2rem, 3rem, 4rem;
 
 .container {
   @include flex;
+  @include shadow(10px, 15px);
   width: 80%;
   max-width: 600px;
   height: 600px;
@@ -48,26 +79,18 @@ $spaces: 0.25rem, 0.5rem, 1rem, 1.5rem, 2rem, 3rem, 4rem;
 }
 .box {
   @include square(100px);
+  @include hover {
+    @include flex(center, flex-start);
+    color: white;
+  }
   border-radius: 5px;
   border: 1px solid black;
   background-color: red;
 }
 
-.circle {
-  @include circle(100px);
-  @include flex;
-  @include hover {
-    color: bisque;
-    font-size: 25px;
-  }
-
-  border: 1px solid black;
-  background-color: red;
-}
-
-.rectangle {
-  @include flex;
-  @include rectangle(100px, 50px);
-  border: 1px solid black;
-  background-color: red;
-}
+// .rectangle {
+//   @include flex;
+//   @include rectangle(100px, 50px);
+//   border: 1px solid black;
+//   background-color: red;
+// }

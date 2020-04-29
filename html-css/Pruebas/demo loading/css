@@ -1,0 +1,11 @@
+.circle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: turquoise;
+  animation: move-the-circle 1s infinite;
+  transform-origin: center center;
+}
+
+/*# sourceMappingURL=css.map */

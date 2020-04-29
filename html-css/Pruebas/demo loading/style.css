@@ -48,6 +48,26 @@
   animation-delay: 0.8s;
 }
 
+.circle:nth-child(9) {
+  left: 240px;
+  animation-delay: 0.9s;
+}
+
+.circle:nth-child(10) {
+  left: 270px;
+  animation-delay: 1s;
+}
+
+.circle:nth-child(11) {
+  left: 300px;
+  animation-delay: 1.1s;
+}
+
+.circle:nth-child(12) {
+  left: 330px;
+  animation-delay: 1.2s;
+}
+
 @keyframes move-the-circle {
   0% {
     transform: translate(0, 0) scale(1);

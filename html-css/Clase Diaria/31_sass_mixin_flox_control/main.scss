@@ -1,0 +1,73 @@
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin square($size) {
+  width: $size;
+  height: $size;
+}
+
+@mixin circle($size) {
+  @include square($size);
+  border-radius: $size;
+}
+
+@mixin rectangle($width, $height, $radius: 0) {
+  width: $width;
+  height: $height;
+  @if $radius != 0 {
+    border-radius: $radius;
+  }
+}
+
+@mixin hover {
+  &:hover {
+    background-color: blue;
+    @content;
+  }
+}
+
+$spaces: 0.25rem, 0.5rem, 1rem, 1.5rem, 2rem, 3rem, 4rem;
+
+// @each $space in $spaces {
+//   .icon:before {
+//     content: $space;
+//   }
+// }
+
+.container {
+  @include flex;
+  width: 80%;
+  max-width: 600px;
+  height: 600px;
+  margin: auto;
+  background-color: antiquewhite;
+  border: 1px solid black;
+}
+.box {
+  @include square(100px);
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: red;
+}
+
+.circle {
+  @include circle(100px);
+  @include flex;
+  @include hover {
+    color: bisque;
+    font-size: 25px;
+  }
+
+  border: 1px solid black;
+  background-color: red;
+}
+
+.rectangle {
+  @include flex;
+  @include rectangle(100px, 50px);
+  border: 1px solid black;
+  background-color: red;
+}

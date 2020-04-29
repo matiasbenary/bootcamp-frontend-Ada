@@ -11,6 +11,13 @@
 
 ---
 
+### FlexBox
+
+- [The Ultimate Guide to Flexbox — Learning Through Examples](https://www.freecodecamp.org/news/the-ultimate-guide-to-flexbox-learning-through-examples-8c90248d4676/)
+- [CSS Flexbox: 5 Real World Use Cases](https://ishadeed.com/article/flexbox-real-world-use-cases/)
+
+---
+
 ### Elementos sin javascript
 
 - [You Dont Need JavaScript](https://github.com/you-dont-need/You-Dont-Need-JavaScript)
@@ -68,8 +75,8 @@
 ### 🖌️ Sass
 
 - [Elementos hijos](http://lukyvj.github.io/family.scss/)
-
 - [Guia de estilos](https://sass-guidelin.es/es/)
+- [Arquitectura](https://www.learnhowtoprogram.com/user-interfaces/building-layouts-preprocessors/7-1-sass-architecture)
 
 ---
 

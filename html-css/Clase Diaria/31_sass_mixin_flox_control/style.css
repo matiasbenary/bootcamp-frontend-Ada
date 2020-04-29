@@ -1,0 +1,17 @@
+/* Error: $n: Invalid index 8 for a list with 7 elements.
+ *    ,
+ * 42 |     content: #{nth($spaces, $i + 1)};
+ *    |                ^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   main.scss 42:16  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: $n: Invalid index 8 for a list with 7 elements.\a    \2577 \a 42 \2502      content: #{nth($spaces, $i + 1)};\a    \2502                 ^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   main.scss 42:16  root stylesheet";
+}

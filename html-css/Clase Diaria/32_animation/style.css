@@ -1,0 +1,22 @@
+p {
+  display: inline-block;
+  border: 1px solid black;
+  animation-duration: 10s;
+  animation-name: bounceIn;
+  animation-timing-function: ease-in-out;
+  animation-delay: 5s;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}

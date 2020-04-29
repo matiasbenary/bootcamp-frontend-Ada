@@ -1,0 +1,29 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+button {
+  text-align: center;
+  font-size: 52px;
+  color: white;
+  padding: 30px 145px;
+  border-radius: 100px;
+  transition: 0.2s;
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+  background-size: 200% auto;
+  background-position: 0;
+}
+
+button:hover {
+  background-position: 100%;
+}

@@ -1,0 +1,58 @@
+.container {
+  width: 80%;
+  max-width: 600px;
+  height: 600px;
+  margin: auto;
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+  align-items: center;
+  background-color: antiquewhite;
+  border: 1px solid black;
+}
+.box {
+  height: 100px;
+  width: 100px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+/* 
+    align-self: Cambia en el eje y este elemento,simi align-items
+    order: me permite cambiar el orden,se ordena de menor a mayor, por defecto todos tiene order 0
+    flex-grow
+    100px de left/100px de right    600px de espacio total-200px espacio ocupado=400px de espacio sobrante
+    400px de espacio sobrante/ (4) cantidad de flex-grow = 100px de indice de crecimiento
+
+    flex-shrink
+    100px de left/100px de right 200px espacio ocupado-150px de espacio total  = 50px de espacio faltante
+    50px de espacio faltante / 5 cantidad de flex-shink = 10px de indice de achicamiento
+
+    flex-basis
+    es el espacio que va ocupar el elemento
+
+    flex
+    es la forma resumida de aplicar estas 3 propidades
+    flex: flex-grow flex-shrink flex-basis
+*/
+.left {
+  background-color: crimson;
+  /* 
+  100px+ 3*(100px indice de crecimiento) = 400px
+  */
+  /* flex-grow: 3; */
+  /*  100px- 3*(10px de indice de achicamiento) = 70px */
+  /* flex-shrink: 3; */
+  flex-basis: 150px;
+}
+.right {
+  background-color: skyblue;
+  flex: 1 0 200px;
+  /* 
+  100px+ 1*(100px indice de crecimiento) = 200px
+  */
+  /* flex-grow: 1; */
+
+  /*  100px- 2*(10px de indice de achicamiento) = 80px */
+  /* flex-shrink: 2; */
+  /* flex-basis: 200px; */
+}

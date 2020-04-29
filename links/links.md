@@ -16,12 +16,20 @@
 - [The Ultimate Guide to Flexbox — Learning Through Examples](https://www.freecodecamp.org/news/the-ultimate-guide-to-flexbox-learning-through-examples-8c90248d4676/)
 - [CSS Flexbox: 5 Real World Use Cases](https://ishadeed.com/article/flexbox-real-world-use-cases/)
 
+### Animacion
+
+- [Cool CSS Animation](https://coolcssanimation.com/#css-animation-cheatsheet)
+- [CSS Animation for Beginners](https://thoughtbot.com/blog/css-animation-for-beginners)
+- [A set sequence of CSS rules](https://marksheet.io/css-animations.html)
+
 ---
 
 ### Elementos sin javascript
 
 - [You Dont Need JavaScript](https://github.com/you-dont-need/You-Dont-Need-JavaScript)
 - [YOU MIGHT NOT NEED JAVASCRIPT](http://youmightnotneedjs.com/)
+
+---
 
 ### Metodologia BEM
 

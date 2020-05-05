@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+      Comparacion simple, pueden ser diferentes pero en esencia son iguales
+      == -> 1 == 1     true
+            1 == '1'   true
+           1 == true   true
+
+      Comparacion estricta,tiene que se exactamente iguales
+      === -> 1 === 1    true
+            1 === '1'   false
+           1 === true   false
+
+      != -> 1 !== 1     false
+            1 !== '1'   false
+           1 !== true   false
+
+      !== -> 1 !== 1     false
+          numero 1 !== string 1
+           1 !== '1'   true
+          numero 1 !== boolean true
+           1 !== true   true
+      >= mayor igual, x >= 18 quiere decir que x tiene que ser igual o mas grande que 18 para que sea verdadero
+      > mayor, x > 18 quiere decir que x tiene que ser mas grande que 18 para que sea verdadero
+      <= menor igual, x <= 18 quiere decir que x tiene que ser igual o menor que 18 para que sea verdadero
+      < menor, x <= 18 quiere decir que x tiene que ser menor que 18 para que sea verdadero
+      ! negador, x = true, !x esto me dice que x tiene un valor de false
+      && and, si pasas y esto es verdadero,se tiene que cumplir todas las condiciones
+      || or , si uno es verdadero todo es verdadero.
+      Algebra boole
+
+      */
+      const edad = prompt("ingrese tu edad");
+      const hora = prompt("ingrese la hora");
+      const propietario = confirm("Sos el propietario?");
+      if ((edad >= 18 && hora < 21) || propietario) {
+        alert("Puede comprar alcohol");
+      } else {
+        alert("No tenes permiso para comprar");
+      }
+
+      //   const comprar = confirm("Tienes mas de 18anios?");
+      //   if (comprar === true) {
+      //     alert("Puede comprar alcohol");
+      //   } else {
+      //     alert("No tenes permiso para comprar");
+      //   }
+    </script>
+  </body>
+</html>

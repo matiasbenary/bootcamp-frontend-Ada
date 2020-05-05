@@ -19,7 +19,7 @@ const number2 = 15;
 let number3 = 0.2;
 let number4 = 0.3;
 const number5 = number + number2;
-test = 13;
+
 // string
 const texto = "hola";
 let texto1 = "test";

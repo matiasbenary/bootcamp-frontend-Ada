@@ -37,14 +37,66 @@
       Algebra boole
 
       */
-      const edad = prompt("ingrese tu edad");
-      const hora = prompt("ingrese la hora");
-      const propietario = confirm("Sos el propietario?");
-      if ((edad >= 18 && hora < 21) || propietario) {
-        alert("Puede comprar alcohol");
-      } else {
-        alert("No tenes permiso para comprar");
-      }
+
+      const havePermissionBuyAlcohol = (age, hour, isOwner) => {
+        //si se cumple (age >= 18 && hour < 21) o isOwner
+        // si se cumple age >= 18 y hour < 21 verdadero
+        // || es "o"
+        // && es "y" by iris
+        if (isOwner) {
+          alert("Soy Propietario");
+        } else {
+          alert("Soy solo un cliente");
+        }
+        return (age >= 18 && hour < 21) || isOwner;
+      };
+
+      //false,null,undifined,0,NaN,""
+      // if(null){}
+      const alertBuy = (age, hour, isOwner, haveSpecialPermission = true) => {
+        //  haveSpecialPermission = undifined
+        //  !falso true
+        // !haveSpecialPermission => !undifined => !false => true
+
+        // let haveSpecialPermission = undefined
+
+        // if (haveSpecialPermission) {
+        //     console.log("Tengo un permiso espacial");
+        //   } else {
+        //     console.log("No tengo un permiso especial");
+
+        //   }
+        if (typeof haveSpecialPermission == "boolean") {
+          if (!haveSpecialPermission) {
+            alert("No tengo un permiso especial");
+          }
+
+          if (havePermissionBuyAlcohol(age, hour, isOwner)) {
+            alert("Pueden comprar alcohol");
+          } else if (haveSpecialPermission) {
+            alert(
+              "Puedo comprar lo que quiera por que tengo un permiso especial"
+            );
+          } else {
+            alert("No pueden comprar alcohol");
+          }
+        } else {
+          alert("El permiso especial tiene que ser del tipo boolean");
+        }
+      };
+      //    condicion ? lo que voy si es verdadero : lo voy hacer si es falso
+      const isOlder = (numero) => {
+        const mensaje = numero >= 70 ? "Es una persona mayor" : "Es joven";
+        alert(mensaje);
+      };
+      // const edad = prompt("ingrese tu edad");
+      // const hora = prompt("ingrese la hora");
+      // const propietario = confirm("Sos el propietario?");
+      // if ((edad >= 18 && hora < 21) || propietario) {
+      //   alert("Puede comprar alcohol");
+      // } else {
+      //   alert("No tenes permiso para comprar");
+      // }
 
       //   const comprar = confirm("Tienes mas de 18anios?");
       //   if (comprar === true) {

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .title {
+        margin-bottom: 45px;
+      }
+
+      .status {
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Piedra,papel o tijera</h1>
+      <div class="buttons">
+        <button id="btnTijera">✂️</button>
+        <button id="btnPapel">📜</button>
+        <button id="btnPiedra">💎</button>
+      </div>
+      <h2 id="status" class="status"></h2>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

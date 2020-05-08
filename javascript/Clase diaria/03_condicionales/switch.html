@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+            null vs undifined
+            undifined se usa para decir que una variable no esta definida,esta es por default cuando llamamos a una varible sin definir,no se deberia asignar nunca.
+            null se usa para decir que una variable esta vacia,se usa para decir que esta definida pero sin uso por el momento.
+
+        */
+      const nombre = prompt("ingrese su nombre");
+
+      if (nombre === "Miriam") {
+        console.log("El nombre de la usuaria es Miriam");
+      } else if (nombre === "Felipa") {
+        console.log("El nombre de la usuaria es Felipa");
+      } else if (nombre === "Xime") {
+        console.log("El nombre de la usuaria es Xime");
+      } else if (nombre === "Belu") {
+        console.log("El nombre de la usuaria es Belu");
+      } else {
+        console.log("El nombre de la usuaria no es Marta, Felipa, Xime o Belu");
+      }
+
+      switch (nombre) {
+        case "Miriam":
+          mensaje = "El nombre es Miriam";
+          break;
+        case "Felipa":
+          mensaje = "El nombre de la usuaria es Felipa";
+          break;
+        case "Xime":
+          mensaje = "El nombre de la usuaria es Xime";
+          break;
+        case "Belu":
+          mensaje = "El nombre de la usuaria es Belu";
+          break;
+        default:
+          mensaje = "El nombre de la usuaria no es Marta, Felipa, Xime o Belu";
+      }
+
+      console.log(mensaje);
+    </script>
+  </body>
+</html>

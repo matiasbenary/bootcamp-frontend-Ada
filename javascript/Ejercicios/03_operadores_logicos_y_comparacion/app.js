@@ -3,7 +3,16 @@ let dineroDisponible = 5000;
 const mostrarDineroDisponible = () => {
   alert(dineroDisponible);
 };
-
+const retirarDinero = (cantidad) => {
+  // 5000 >= 3000
+  if (dineroDisponible >= cantidad) {
+    //   dineroDisponible = dineroDisponible - cantidad
+    dineroDisponible -= cantidad;
+    mostrarDineroDisponible();
+  } else {
+    alert("Te quedaste sin dinero");
+  }
+};
 // const retirarDinero = (cantidad) => {
 //   //  voy a sacar dos veces 3000
 //   //primer vuelta- 5000 -3000
@@ -18,14 +27,3 @@ const mostrarDineroDisponible = () => {
 //     mostrarDineroDisponible();
 //   }
 // };
-
-const retirarDinero = (cantidad) => {
-  // 5000 >= 3000
-  if (dineroDisponible >= cantidad) {
-    //   dineroDisponible = dineroDisponible - cantidad
-    dineroDisponible -= cantidad;
-    mostrarDineroDisponible();
-  } else {
-    alert("Te quedaste sin dinero");
-  }
-};

@@ -2,36 +2,46 @@ let health = 10;
 let happiness = 10;
 let cleanliness = 10;
 let energy = 10;
-let result;
 
+const healthSpan = document.getElementById("healthSpan");
+const happinessSpan = document.getElementById("happinessSpan");
+const cleanlinessSpan = document.getElementById("cleanlinessSpan");
+const energySpan = document.getElementById("energySpan");
+
+const updateSpan = () => {
+  healthSpan.innerHTML = health;
+  happinessSpan.innerHTML = happiness;
+  cleanlinessSpan.innerHTML = cleanliness;
+  energySpan.innerHTML = energy;
+};
+updateSpan();
 const tamagochi = (input) => {
   switch (input) {
     case "ALIMENTAR":
-      result = feed();
+      feed();
       break;
     case "JUGAR":
-      result = play();
+      play();
       break;
     case "DORMIR":
-      result = sleep();
+      sleep();
       break;
     case "VACUNAR":
-      result = vaccinate();
+      vaccinate();
       break;
     case "BAÑAR":
-      result = bath();
+      bath();
       break;
     case "RETAR":
-      result = scold();
+      scold();
       break;
     case "ACARICIAR":
-      result = stroke();
+      stroke();
       break;
     default:
-      result = "Error";
+      alert("error");
   }
-  printStatus();
-  return result;
+  updateSpan();
 };
 
 const feed = () => {
@@ -58,6 +68,7 @@ const vaccinate = () => {
 
 const bath = () => {
   health += 3;
+  cleanliness += 2;
 };
 
 const scold = () => {
@@ -68,17 +79,5 @@ const stroke = () => {
   happiness += 4;
 };
 
-const printStatus = () => {
-  alert(
-    `Estado ACTUALIZADO de Foxy ≧◠ᴥ◠≦: Salud: ${health}, Felicidad: ${happiness}, Limpieza: ${cleanliness} & Energía: ${energy}`
-  );
-};
-
-while (health > 0) {
-  alert("Hola! Soy Foxy! ≧◠ᴥ◠≦");
-  printStatus();
-  const inputOwner = prompt(
-    "Hey, ingresá una opción: ALIMENTAR, JUGAR, DORMIR, VACUNAR, BAÑAR, RETAR o ACARICIAR"
-  );
-  tamagochi(inputOwner);
-}
+const acariciarButton = document.getElementById("acariciar");
+acariciarButton.addEventListener("click", () => tamagochi("ACARICIAR"));

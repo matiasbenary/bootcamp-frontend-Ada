@@ -27,3 +27,7 @@ const retirarDinero = (cantidad) => {
 //     mostrarDineroDisponible();
 //   }
 // };
+
+const isOdd = (num) => {
+  return num % 2 ? "es impar" : "es par";
+};

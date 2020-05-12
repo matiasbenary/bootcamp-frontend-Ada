@@ -1,18 +1,18 @@
-let dineroDisponible = 5000;
+// let dineroDisponible = 5000;
 
-const mostrarDineroDisponible = () => {
-  alert(dineroDisponible);
-};
-const retirarDinero = (cantidad) => {
-  // 5000 >= 3000
-  if (dineroDisponible >= cantidad) {
-    //   dineroDisponible = dineroDisponible - cantidad
-    dineroDisponible -= cantidad;
-    mostrarDineroDisponible();
-  } else {
-    alert("Te quedaste sin dinero");
-  }
-};
+// const mostrarDineroDisponible = () => {
+//   alert(dineroDisponible);
+// };
+// const retirarDinero = (cantidad) => {
+//   // 5000 >= 3000
+//   if (dineroDisponible >= cantidad) {
+//     //   dineroDisponible = dineroDisponible - cantidad
+//     dineroDisponible -= cantidad;
+//     mostrarDineroDisponible();
+//   } else {
+//     alert("Te quedaste sin dinero");
+//   }
+// };
 // const retirarDinero = (cantidad) => {
 //   //  voy a sacar dos veces 3000
 //   //primer vuelta- 5000 -3000
@@ -28,6 +28,6 @@ const retirarDinero = (cantidad) => {
 //   }
 // };
 
-const isOdd = (num) => {
-  return num % 2 ? "es impar" : "es par";
-};
+//   condicion ? si es true : si es false
+const msj = !true ? "esto es verdadero" : "esto es falso";
+alert(msj);

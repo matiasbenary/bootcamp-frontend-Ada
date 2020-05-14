@@ -72,6 +72,7 @@
 - [Visual estudio code](https://www.udemy.com/course/vscode-mejora-tu-velocidad-para-codificar/)
 - [Adobe XD](https://www.udemy.com/course/curso-adobe-xd/)
 - [gutenberg wordpress](https://www.udemy.com/course/wordpress-introduccion-practica-a-gutenberg-el-nuevo-editor/)
+- [JavaScript Basics: Start Coding in 5 Minutes [2019]](https://www.udemy.com/course/javascript-basics-start-coding-in-5-minutes-2019/)
 
 ---
 

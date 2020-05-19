@@ -14,21 +14,38 @@
 4- clasificar la fruta si no existe agrego un nuevo cajon si exite le sumo un punto
 
 */
-
-const frutasString = "🍎 🍎 🍐 🍑 🍎 🍑";
+// ingresa un string y lo convierto en array
+const frutasString = "🍎 🍎 🍐 🍑 🍎 🍑 🍌";
 const frutas = frutasString.split(" ");
 
-let indiceDeFrutas = [];
+// indice de frutas me va a guardar frutas contadas
+let listadoDeFruta = [];
+// va contar frustas
 let conteoFruta = [];
 
 for (let i = 0; i < frutas.length; i++) {
-  let indiceDeFruta = indiceDeFrutas.indexOf(frutas[i]);
+  // voy a buscar en listadoDeFruta la frutas[i],en el primer caso va a ser 🍎,como no existe me va a retorna un -1
+  let indiceDeFruta = listadoDeFruta.indexOf(frutas[i]);
   if (indiceDeFruta === -1) {
-    indiceDeFrutas.push(frutas[i]);
+    listadoDeFruta.push(frutas[i]);
     conteoFruta.push(1);
   } else {
     conteoFruta[indiceDeFruta]++;
   }
 }
+console.log(conteoFruta,listadoDeFruta)
+// let manzana = 0;
+// let durazno = 0;
+// let pera = 0;
 
-console.log(indiceDeFrutas, conteoFruta);
+// // console.log(listadoDeFruta, conteoFruta);
+// for(let i = 0; i< frutas.length; i++){
+//   if(frutas[i] === "🍎"){
+//     manzana++;
+//   }else if(frutas[i] === "🍐"){
+//     pera++;
+//   } else if(frutas[i] === "🍑"){
+//     durazno++;
+//   }
+// }
+// console.log(manzana,pera,durazno)

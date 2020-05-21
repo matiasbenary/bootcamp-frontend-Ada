@@ -39,6 +39,27 @@ const caracteresRestantes = () => {
   return maxCarateres - textarea.value.length;
 };
 
+let edad = 5;
+
+const sumarCinco = () => {
+  edad += 5;
+};
+
+edad = sumarCinco2(edad);
+const sumarCinco2 = (valor) => {
+  return valor + 5;
+};
+
+const saludar = (esDespedida = true) => {
+  let saludo = "";
+  if (esDespedida) {
+    saludo = "chau";
+  } else {
+    saludo = "hola";
+  }
+  alert(`${saludo} Pepito`);
+};
+
 const excesoDeCaracterer = () => {
   if (caracteresRestantes() < 0) {
     label.classList.add("error");

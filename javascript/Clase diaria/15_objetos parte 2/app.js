@@ -25,3 +25,21 @@ console.log("++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
 // Object
 // Por parametro recibe un objeto y te retorna un array con todos lo propiedades de esta.
 console.log(Object.keys(persona));
+
+const persona2 = {
+  nombre: "Matias",
+  apellido: "Benary",
+  edad: 25,
+  leguajes: ["PHP", "HTML", "JS"],
+  test: {
+    tetera: "para hacer te",
+  },
+  saludar: function () {
+    console.log(this, self, `Hola ${this.apellido}`);
+  },
+  saludarArrow() {
+    console.log(this, `Hola ${persona2.nombre}`);
+  },
+};
+
+persona2.saludarArrow();

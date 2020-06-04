@@ -7,11 +7,13 @@ const expect = chai.expect; //Abreviar expect
 // suite de Test
 //  primer parametro nombre del la suite
 //  segundo es una funcion 
-describe("mes", () => 
+describe("Volumen de Caja", () => 
 {
+  it("getBoxVolume me retorna 10 en un objeto de 2X5X1", () => {
 
-  it("mes 5 deberia ser mayo", () => {
-    expect(getMonth(5)).to.be.equal("mayo");
+    const size = { width: 2, length: 5, height: 1 };
+
+    expect(getBoxVolume(size)).to.be.equal(10);
   });
 }); //
 

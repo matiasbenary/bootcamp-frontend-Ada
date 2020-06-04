@@ -7,12 +7,9 @@ const expect = chai.expect; //Abreviar expect
 // suite de Test
 //  primer parametro nombre del la suite
 //  segundo es una funcion 
-describe("mes", () => 
+describe("App", () => 
 {
 
-  it("mes 5 deberia ser mayo", () => {
-    expect(getMonth(5)).to.be.equal("mayo");
-  });
 }); //
 
 mocha.run(); //Correr test

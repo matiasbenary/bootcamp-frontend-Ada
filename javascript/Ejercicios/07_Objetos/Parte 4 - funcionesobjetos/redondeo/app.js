@@ -7,5 +7,9 @@
 // ```
 
 const round = (value) => {
-    return { floor: 13, ceil: 14, round: 13 }
+    return {
+        floor:Math.floor(value),
+        ceil:Math.ceil(value),
+        round:Math.round(value),
+    }
 }

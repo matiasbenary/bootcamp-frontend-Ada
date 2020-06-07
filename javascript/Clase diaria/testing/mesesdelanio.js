@@ -39,7 +39,7 @@ const getMonth = (num) => {
       mes = "diciembre";
       break;
     default:
-      mes = "invalido";
+      mes = null;
   }
 
   return mes;

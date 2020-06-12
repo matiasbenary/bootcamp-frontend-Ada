@@ -18,7 +18,7 @@ const nombres = [
 // }
 
 // 1- verifico que tengo retornar,esto va ser mi acumulador
-// 2- es matener mi acumulador en este formato
+// 2- tengo que matener mi acumulador en este formato
 // 3- siempre debo retornar el acumulador
 const cantidadNombres = nombres.reduce((contadorNombre, nombre, indice) => {
   //  {},"Matias",0

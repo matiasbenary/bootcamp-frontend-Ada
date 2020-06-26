@@ -54,3 +54,11 @@ const local = {
 
   sucursales: ["Centro", "Caballito"],
 };
+local.precios.reduce((html, { componente }) => {
+  return (
+    html +
+    `
+    <option value="${componente}">${componente}</option>
+  `
+  );
+}, "");

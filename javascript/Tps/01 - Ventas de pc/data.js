@@ -54,11 +54,55 @@ const local = {
 
   sucursales: ["Centro", "Caballito"],
 };
-local.precios.reduce((html, { componente }) => {
-  return (
-    html +
-    `
-    <option value="${componente}">${componente}</option>
-  `
-  );
-}, "");
+// local.precios.reduce((html, { componente }) => {
+//   return (
+//     html +
+//     `
+//     <option value="${componente}">${componente}</option>
+//   `
+//   );
+// }, "");
+
+<div
+  class="fade modal"
+  id="staticBackdropLive"
+  data-backdrop="static"
+  data-keyboard="false"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="staticBackdropLiveLabel"
+  style="display: none;"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLiveLabel">
+          Modal title
+        </h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>
+          I will not close if you click outside me. Don't even try to press
+          escape key.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary">
+          Understood
+        </button>
+      </div>
+    </div>
+  </div>
+</div>;

@@ -29,3 +29,5 @@ const fetchCursos = () => {
     wait(random()).then((_) => resolve(CURSOS));
   });
 };
+
+fetchAlumnas().then((alumnas) => {});

@@ -198,3 +198,153 @@ pasarAMayusculas(arrayMix)
   .then((result) => console.log(result))
   .catch(error => console.log(error))
 ```
+
+## ⚙️ **Ejercicio 6**
+
+- Vamos a escribir un función `todosPares(arr)` que recibe un array de números
+- La función tiene que devolver una promesa
+- `todosPares(arr)` tiene que:
+  - Verificar que todos los números del array son pares
+  - Si todos son pares, tenemos que ejecutar el método `resolve` con el texto "Todos los número son pares"
+  - Si hay al menos un número que no es par, tenemos que ejecutar la función `reject` con el texto "No todos los números del array son pares"
+
+```js
+const todosPares = (arr) => {
+  return new Promise((resolve, reject) => {
+    // codea acá tu solución
+  });
+};
+
+todosPares([2, 4, 6])
+  .then((res) => console.log(`Promesa resuelta: ${res}`))
+  .catch((err) => console.log(`Promesa con error: ${err}`));
+// Promesa resuelta: Todos los número son pares
+
+todosPares([2, 4, 7, 6])
+  .then((res) => console.log(`Promesa resuelta: ${res}`))
+  .catch((err) => console.log(`Promesa con error: ${err}`));
+// Promesa con error: No todos los números del array son pares
+```
+
+## ⚙️ **Ejercicio 7**
+
+- Tenemos que escribir una función `login(user, pass)` para que una persona pueda ingresar en nuestra aplicación web
+- La función recibe dos parámetros: `user` y `pass`
+- La función retorna una promesa
+- Dentro de la promesa, tenemos que validar si **user** existe dentro del array de perfiles y si la contraseña coincide con la pasada por parámetro
+  - Si existe y la pass coincide, tenemos que ejecutar el método `resolve` con el objeto que contiene todos los datos de la persona (no te olvides de borrar la propieda `pass` por seguridad 🦹‍♀️)
+  - Si existe y la pass **no** coincide, tenemos que ejecutar el método `reject` con el mensaje de error `Contraseña incorrecta`
+  - Si no existe, tenemos que ejecutar el método `reject` con el mensaje de error `El perfil con user ${user} no existe`
+
+```js
+const users = [
+  { id: 1, user: "adalovelace", pass: "AL1815" },
+  { id: 2, user: "gracehopper", pass: "GH4536" },
+  { id: 3, user: "hedylamarr", pass: "HL7788" },
+];
+
+const login = (user, pass) => {
+  // codea acá tu solución
+};
+
+login("adalovelace", "AL1815")
+  .then((res) => console.log(res))
+  .catch((err) => console.log(err));
+// { id: 1, user: 'adalovelace' }
+
+login("gracehopper", "123")
+  .then((res) => console.log(res))
+  .catch((err) => console.log(err));
+// Contraseña incorrecta
+
+login("sherylsandberg", "SS1234")
+  .then((res) => console.log(res))
+  .catch((err) => console.log(err));
+// El perfil con user sherylsandberg no existe
+```
+
+## ⚙️ **Ejercicio 8**
+
+- Tenemos la función `climaCincoDias()` que devuelve un listado con el clima a 5 días (cuando se resuelve la promesa)
+- El listado es un array de 5 objetos
+- Cada objeto representa un día, con las siguientes propiedades: `fecha` (Date), `min` (número con la temp. mín), `max` (número con la temp. max), `icono` (string con un emoji que representa el estado del clima)
+- Utilizá la función para obtener el clima y mostrar por consola, un línea por cada día, con su temperatura máxima, mínima y el ícono
+- Los datos son generados automáticamente, no son reales
+
+```js
+const climaCincoDias = () => {
+  const sumarDias = (f, d) =>
+    new Date(new Date(Number(f)).setDate(f.getDate() + d));
+
+  const random = (min, max) =>
+    Math.floor(Math.random() * (max - min + 1) + min);
+
+  const icons = ["🔆", "⛅", "🌩", "🌧", "⛈", "⛄"];
+
+  return new Promise((resolve, reject) => {
+    const diasClima = [];
+
+    const int = setInterval(() => {
+      const min = random(-1, 27),
+        max = random(min, min + 10);
+
+      if (
+        diasClima.push({
+          fecha: sumarDias(new Date(), diasClima.length),
+          min,
+          max,
+          icono: icons[random(0, icons.length - 1)],
+        }) === 5
+      ) {
+        clearInterval(int);
+        resolve(diasClima);
+      }
+    }, 150);
+  });
+};
+
+// utilizar la funcion climaCincoDias y mostrar por pantalla el siguiente resultado (los valores van a variar porque son aleatorios)
+
+// Lunes 06/07 - ⛄ - Temp. Min.: 8ºc - Temp. Máx.: 10ºc
+// Martes 07/07 - 🌩 - Temp. Min.: 3ºc - Temp. Máx.: 4ºc
+// Miercoles 08/07 - ⛅ - Temp. Min.: 9ºc - Temp. Máx.: 13ºc
+// Jueves 09/07 - 🔆 - Temp. Min.: 3ºc - Temp. Máx.: 5ºc
+// Viernes 10/07 - 🔆 - Temp. Min.: 18ºc - Temp. Máx.: 21ºc
+```
+
+## ⚙️ **Ejercicio 9**
+
+- Tenemos un listado de users de una app y una función `fetchUser` que recibe una dirección de email por parámetro y nos devuelve el objeto del registro que coincida con la búsqueda
+- `fetchUser` es una función asíncrona, por lo que nos retornará una promesa
+- Si no se encuentra ningún registro, la promesa se resuelve igual, pero nos devuelve el valor `null`
+- Tenemos que implementar la función `createUser` que recibe un email y un nombre por parámetro
+- La función tiene que:
+  - Utilizar `fetchUser` para verificar si ya existe un registro con el mismo email
+  - Si existe, rechazar la promesa con el mensaje `Ya existe un registro con el email ${email}`
+  - Si el usuario no existe, tenemos que crear el nuevo objeto con las propiedades email, nombre (con los datos pasados por parámetro) y **id**, un número que deberá tomar el `id` más alto en todo el array, y asignar el siguiente
+  - Una vez agregado el nuevo registro, la promesa tiene que retorna el objeto completo (con id, email y nombre)
+
+```js
+const users = [
+  { id: 1, email: "diana@gmail.com", name: "Diana Prince" },
+  { id: 2, email: "bruce@gmail.com", name: "Bruce Wayne" },
+  { id: 3, email: "clark@gmail.com", name: "Clark Kent" },
+];
+
+const fetchUser = (email) =>
+  Promise.resolve(users.find((u) => u.email === email));
+
+const createUser = (email, name) => {
+  // SOLUCION
+};
+
+createUser("diana@gmail.com", "Wonder Woman")
+  .then((res) => console.log(`Registro creado: ${res}`))
+  .catch((err) => console.log(`No se creó el registro: ${err}`));
+// No se creó el registro: Ya existe un registro con el email diana@gmail.com
+
+createUser("barry@gmail.com", "Barry Allen")
+  .then((res) => console.log(`Registro creado: ${res}`))
+  .catch((err) => console.log(`No se creó el registro: ${err}`));
+// Registro creado: { id: 4, email: 'barry@gmail.com', name: 'Barry Allen' }
+```

@@ -79,7 +79,7 @@ const productos = [
 ];
 ```
 
-# Todo Junto
+# Bonus
 
 ## Blog
 
